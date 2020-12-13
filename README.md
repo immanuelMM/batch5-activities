@@ -1,6 +1,6 @@
 1. [Best_practice](/Assignement) and ![Image](src)
 2. [Tribute_page](/Tribute_page/index.html) and ![Image](src)
 3. [flex_chesboard](/Chess_board/index.html) and ![Image](src)
-4. [Grid_chessboard](/Grid_chessboard/index.html) and ![Image](src)
+4. [Grid_chessboard](/Grid-chessboard/index.html) and ![Image](src)
 5. [landing_page](/landing_page/index.html) and ![Image](src)
 6. [survey_form](/survey_form/index.html) and ![Image](src)
