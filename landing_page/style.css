@@ -26,6 +26,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    border-bottom: 10px solid black;
 }
 #nav-bar {
     display: flex;
@@ -61,6 +62,7 @@ html {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+    border-bottom: 10px solid black;
 }
 
 #video {
@@ -184,7 +186,7 @@ html {
    }
     #header {
         width: 100%;
-        background-color: black;
+        background-color: #fdca00;
     }
     #nav-bar {
         width: 1px;
