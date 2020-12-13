@@ -1,0 +1,88 @@
+body {
+    background-color: #312e2b;
+    margin:0;
+    height: 100vh;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    
+  }
+.chessboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 45vw;
+    height: 45vw;    
+  } 
+  /* div:hover {
+    background-color: #bacb2b;
+  }  */
+.item {
+   font-size: 3vw; 
+   text-align: center;
+  }
+.box-white {
+    background-color: #eeeed2;
+  }
+.box-black {
+    background-color: #85aa53;
+  }
+.player {
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr   ;
+    font-size: 2vw;
+    width: 45vw;
+  }
+.image {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+.player-time {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin-top: 60px;
+    background-color: #413e3c;
+    color: cornsilk;
+  }
+img {
+    height: 3vw;
+    padding: 1vw;
+  }
+.item:hover {
+    background-color: #bacb2b;
+  }
+  @media(max-width:700px){
+body{
+    line-height:25px;
+  }
+.chessboard{
+    width: 100vw;
+    height: 100vw;    
+  }
+.item {
+   font-size: 10vw; 
+   justify-items: flex-end;
+  }
+.item:hover {
+    background-color: ##bacb2b;
+  }
+.container {
+   display: flex;
+ }
+.player {
+    font-size: 4vw;
+    width: 100vw;
+    justify-items: start;
+    
+  }
+img {
+    height: 6vw;
+    padding: 1vw;
+  }
+.player-time {  
+    margin-top: 20px;
+    border:1px solid  #85aa53;
+    font-size: 5vw;
+  }

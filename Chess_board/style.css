@@ -1,0 +1,67 @@
+.chessboard{
+    border: 5px solid black;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    height: 50vw;
+    margin: 0 auto;
+    width: 50vw;
+  }
+  
+  .row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  
+  
+  .white-box{
+    background-color: #eeeed2;
+    flex: 1;
+    font-size: 4vw;
+    text-align: center;
+  }
+  
+  .black-box{
+    background-color: #85aa53;
+    flex: 1;
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  div:hover {
+    background-color: #bacb2b;
+  }
+
+  body {
+    background-color: #312e2b;
+    color: aliceblue;
+  }
+  .container-player {
+    background-color: #2b2723;
+    display: flex;
+
+  }
+  .item{
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    width: 3rem;
+    border: 3px;
+    color: #989695;
+    margin: 0.375rem;
+  }
+  .item img {
+    height: 50px;
+  }
+  .item2 {
+    margin: 10px;
+    width: 100rem;
+  }
+  .item3 {
+    border: 1px solid cadetblue ;
+    text-align: center;
+    padding: 20px;
+    width: 50rem;
+    border-radius: 3rem;
+  }
