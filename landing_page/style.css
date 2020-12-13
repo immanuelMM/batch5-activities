@@ -6,7 +6,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #428fbb;
+    background:#fdca00;
     height: 56px;
     display: flex;
     justify-content: space-between;
@@ -24,8 +24,26 @@ body {
     margin: 1em;
     color: azure;
     letter-spacing:4px;
+    font-size: 20px;
 }
 #header-img {
-    margin: 1rem;
-    color: #fed136;
+    margin-left: 15rem;
+    color:  azure;
 }
+.page {
+    background-color: aquamarine;
+    padding: 6rem 0;    
+}
+.image {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    background-image: url(m.jpg);
+}
+@media screen and (max-width: 600px) {
+    
+}
+
