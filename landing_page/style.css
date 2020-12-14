@@ -195,12 +195,11 @@ html {
     #header-img{
     margin-left: 2rem;
     }
-    .image {
-        background-color: aquamarine; 
-        padding-top: 17rem;
-        padding-bottom: 12.5rem
+    .image { 
+        min-height:15vw;
+        margin-top: 4vw;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 300px) {
         .container-xl, .container-lg, .container-md, .container-sm, .container {
           max-width: 1140px;
         }
