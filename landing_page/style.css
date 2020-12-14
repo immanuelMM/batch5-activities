@@ -227,16 +227,11 @@ input[type=submit]:hover {background-color: #45a049;}
         min-height:50vw;
         margin-top: 4vw;
     }
-    @media (min-width: 300px) {
-        .container-xl, .container-lg, .container-md, .container-sm, .container {
-          max-width: 1140px;
-        }
-      }
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: -0.75rem;
-        margin-left: -0.75rem;
-      }
+    .portfolio-item img{
+      height: 25vw;
+      width: 43vw;
+  } 
+  
+  
 }
 
