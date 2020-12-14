@@ -3,11 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -208,9 +203,14 @@ input[type=submit]:hover {background-color: #45a049;}
 }
 
 @media screen and (max-width: 600px) {
-   body {
+  * {
+    box-sizing: border-box;
+} 
+  body {
     line-height:40px;
     font-size:21px;
+    width: 100%;
+    box-sizing: border-box;
    }
     #header {
         width: 100%;

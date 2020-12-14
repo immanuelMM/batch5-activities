@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
+    <header id="header">
         <div id="header-img">
                 <img src="p2.png" alt="" height="150    ">
         </div>
-        <ul id="nav-bar">
-            <li class="nav-link"><a href="#">Home</a></li>
-            <li class="nav-link"><a href="">About</a></li>
-            <li class="nav-link"><a href="">Contact</a></li>
-        </ul>
-    </div>
+        <nav id="nav-bar">
+            <li class="nav-link"><a href="#header">Home</a></li>
+            <li class="nav-link"><a href="#product">product</a></li>
+            <li class="nav-link"><a href="#name-email">Contact</a></li>
+        </nav>
+    </header>
     <div class="image image2">   
     </div>
     <section class="page-section bg-light" id="product">
@@ -30,13 +30,13 @@
                     <div class="product-item">
                         <a class="product-link" >
                             <div class="product-hover">
-                                <div class="product-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="product-hover-content"></div>
                             </div>
                                 <img class="img-fluid" src="m1.png" alt="" />
                         </a>
                         <div class="product-caption">
-                            <div class="product-caption-heading">chocoberry</div>
-                            <div class="product-caption-subheading text-muted">for Only 100 Pesos</div>
+                            <div class="product-caption-heading">Wild Strawberry</div>
+                            <div class="product-caption-subheading text-muted">for Only 119 Pesos</div>
                         </div>
                     </div>
                  </div>
@@ -44,13 +44,13 @@
                     <div class="product-item">
                         <a class="product-link" >
                             <div class="product-hover">
-                                <div class="product-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="product-hover-content"></div>
                             </div>
                                 <img class="img-fluid" src="m3.jpg" alt="" />
                         </a>
                         <div class="product-caption">
-                            <div class="product-caption-heading">chocoberry</div>
-                            <div class="product-caption-subheading text-muted">for Only 100 Pesos</div>
+                            <div class="product-caption-heading">Nutella Chocopuff</div>
+                            <div class="product-caption-subheading text-muted">for Only 129 Pesos</div>
                         </div>
                     </div>
                  </div>             
@@ -64,13 +64,13 @@
                     <div class="product-item">
                         <a class="product-link" >
                             <div class="product-hover">
-                                <div class="product-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="product-hover-content"></div>
                             </div>
                             <img class="img-fluid" src="tako.jfif" alt="" />
                         </a>
                         <div class="product-caption">
                             <div class="product-caption-heading">Cheesy takoyaki</div>
-                            <div class="product-caption-subheading text-muted">for Only 100 Pesos</div>
+                            <div class="product-caption-subheading text-muted">for Only 105 Pesos</div>
                         </div>
                     </div>
                 </div>
@@ -78,13 +78,13 @@
                     <div class="product-item">
                         <a class="product-link" >
                             <div class="product-hover">
-                                <div class="product-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="product-hover-content"></div>
                             </div>
                             <img class="img-fluid" src="tako.jfif" alt="" />
                         </a>
                         <div class="product-caption">
                             <div class="product-caption-heading">Classictakoyaki</div>
-                            <div class="product-caption-subheading text-muted">for Only 100 Pesos</div>
+                            <div class="product-caption-subheading text-muted">for Only 105 Pesos</div>
                         </div>
                     </div>
                 </div>
@@ -94,12 +94,12 @@
         </div>
     <div class="footer" style="background-color: brown;">
         <div class="form">
-            <form action="">
+            <form action="index.html">
                 <label for="email" id="name-email">Email Us:</label>
                     <input type="text" name="email" id="email" pattern=".+glovex.com" size="30" required placeholder="merino.mahusay@gmail.com">
                 
                 <label for="submit">
-                    <input type="submit">
+                    <input type="submit" id="submit">
                 </label>
             </form>
         </div> 
