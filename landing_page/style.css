@@ -112,7 +112,7 @@ html {
     margin: 0 auto;
   } 
   .portfolio-item img{
-      height: 25vw;
+      height: 20vw;
       width: 25vw;
   } 
   .portfolio-hover {
@@ -148,15 +148,15 @@ html {
   .container {
     max-width: 1000px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
   }
   
   .container  {
   width: 100%;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 10px;
+  margin-left: 300px;
 }
   .text-center {
     text-align: center !important;
@@ -228,10 +228,23 @@ input[type=submit]:hover {background-color: #45a049;}
         margin-top: 4vw;
     }
     .portfolio-item img{
-      height: 25vw;
-      width: 43vw;
-  } 
-  
-  
+      height: 60vw;
+      width: 80vw;
+  }
+  .container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container  {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
 }
-
+  #video {
+    height: 100vw;
+    width: 50vw;
+  }
+}
