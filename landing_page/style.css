@@ -196,7 +196,7 @@ html {
     margin-left: 2rem;
     }
     .image { 
-        min-height:15vw;
+        min-height:50vw;
         margin-top: 4vw;
     }
     @media (min-width: 300px) {
