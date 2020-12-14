@@ -51,8 +51,8 @@ html {
     color:  azure;
 }
 .image {
-    min-height:50rem;
-    margin-top: 4rem;
+    min-height:50vw;
+    margin-top: 4vw;
     left: 0;
     right: 0;
     background-image: url(m.jpg);
