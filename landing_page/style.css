@@ -207,6 +207,9 @@ input[type=submit]:hover {background-color: #45a049;}
   padding: 5vw;
   text-align: center;
 }
+#map {
+  /* border: 10px solid black; */
+}
 @media screen and (max-width: 600px) {
   * {
     box-sizing: border-box;
@@ -260,10 +263,12 @@ input[type=submit]:hover {background-color: #45a049;}
   #map {
     height: 50vw;
     width: 10vw;
+    border: 1000em;
   }
   iframe {
     margin-left: 3vw;
     height: 50vw;
     width: 90vw;
+    ;
   }
 }
