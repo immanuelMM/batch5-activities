@@ -201,7 +201,12 @@ input[type=submit]:hover {background-color: #45a049;}
   height: 30vw;
   width: 30vw;
 }
-
+.footer {
+  grid-row: 1fr 1fr;
+  background-color:#c48560;
+  padding: 5vw;
+  text-align: center;
+}
 @media screen and (max-width: 600px) {
   * {
     box-sizing: border-box;
@@ -246,5 +251,19 @@ input[type=submit]:hover {background-color: #45a049;}
   #video {
     height: 100vw;
     width: 50vw;
+  }
+  .footer {
+    background-color:#c48560;
+    padding: 1vw;
+    text-align: center;
+  }
+  #map {
+    height: 50vw;
+    width: 10vw;
+  }
+  iframe {
+    margin-left: 3vw;
+    height: 50vw;
+    width: 90vw;
   }
 }
