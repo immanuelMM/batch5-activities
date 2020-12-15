@@ -4,4 +4,4 @@
 4. [Grid_chessboard](/Grid-chessboard/index.html) and ![Image](src)
 5. [landing_page](/landing_page/index.html) and ![Image](src)
 6. [survey_form](/survey_form/index.html) and ![Image](src)
-7. [survey_form](/calculator/index.html) and ![Image](src)
+7. [Calculator_js](/calculator/index.html) and ![Image](src)
