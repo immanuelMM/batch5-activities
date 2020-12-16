@@ -145,8 +145,8 @@
                 </tr>
                 <tr class="keys">
                     <td><input type="button" id="num"  value="c" onclick="calculator.display.value = ' '" class="button"></td>
-                    <td><input type="button" id="num"  value="%" onclick="calculator.display.value += '%'"class="button"></td>
-                    <td><input type="button" id="num"  value="x" onclick="calculator.display.value += 'x'" class="button"></td>
+                    <td><input type="button" id="num"  value="" onclick="calculator.display.value = ''"class="button"></td>
+                    <td><input type="button" id="num"  value="del" onclick="calculator.display.value = calculator.display.value.substr(0,calculator.display.value.length-1)" class="button"></td>
                     <td class="operator"><input type="button" id="num"  value="/" onclick="calculator.display.value += '/'" class="button"></td>
                 </tr>
                 <tr class="keys">
