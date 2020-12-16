@@ -120,6 +120,18 @@
             top: 4px;
             box-shadow: 0px 0px #d3545d;
         }
+        .button {
+            background-color: #58524d; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
 
     </style>
 </head>
@@ -132,34 +144,34 @@
                     </td>
                 </tr>
                 <tr class="keys">
-                    <td><input type="button" id="num"  value="c" onclick="calculator.display.value = ' '"></td>
-                    <td><input type="button" id="num"  value="%" onclick="calculator.display.value += '%'"></td>
-                    <td><input type="button" id="num"  value="x" onclick="calculator.display.value += 'x'"></td>
-                    <td class="operator"><input type="button" id="num"  value="/" onclick="calculator.display.value += '/'"></td>
+                    <td><input type="button" id="num"  value="c" onclick="calculator.display.value = ' '" class="button"></td>
+                    <td><input type="button" id="num"  value="%" onclick="calculator.display.value += '%'"class="button"></td>
+                    <td><input type="button" id="num"  value="x" onclick="calculator.display.value += 'x'" class="button"></td>
+                    <td class="operator"><input type="button" id="num"  value="/" onclick="calculator.display.value += '/'" class="button"></td>
                 </tr>
                 <tr class="keys">
-                    <td><input type="button" id="num1"  value="7" onclick="calculator.display.value += '7'"></td>
-                    <td><input type="button" id="num"  value="8" onclick="calculator.display.value += '8'"></td>
-                    <td><input type="button" id="num"  value="9" onclick="calculator.display.value += '9'"></td>
-                    <td class="operator"><input type="button" id="num"  value="*" onclick="calculator.display.value += '*'"></td>
+                    <td><input type="button" id="num1"  value="7" onclick="calculator.display.value += '7'" class="button"></td>
+                    <td><input type="button" id="num"  value="8" onclick="calculator.display.value += '8'" class="button"></td>
+                    <td><input type="button" id="num"  value="9" onclick="calculator.display.value += '9'" class="button"></td>
+                    <td class="operator"><input type="button" id="num"  value="*" onclick="calculator.display.value += '*'" class="button"></td>
                 </tr>
                 <tr class="keys">
-                    <td><input type="button" id="num"  value="4" onclick="calculator.display.value += '4'"></td>
-                    <td><input type="button" id="num"  value="5" onclick="calculator.display.value += '5'"></td>
-                    <td><input type="button" id="num"  value="6" onclick="calculator.display.value += '6'"></td>
-                    <td class="operator"><input type="button" id="num"  value="-" onclick="calculator.display.value += '-'"></td>
+                    <td><input type="button" id="num"  value="4" onclick="calculator.display.value += '4'" class="button"></td>
+                    <td><input type="button" id="num"  value="5" onclick="calculator.display.value += '5'" class="button"></td>
+                    <td><input type="button" id="num"  value="6" onclick="calculator.display.value += '6'" class="button"></td>
+                    <td class="operator"><input type="button" id="num"  value="-" onclick="calculator.display.value += '-'" class="button"></td>
                 </tr>
                 <tr class="keys">
-                    <td><input type="button" id="num"  value="1" onclick="calculator.display.value += '1'"></td>
-                    <td><input type="button" id="num"  value="2" onclick="calculator.display.value += '2'"></td>
-                    <td><input type="button" id="num"  value="3" onclick="calculator.display.value += '3'"></td>
-                    <td class="operator"><input type="button" id="num"  value="+" onclick="calculator.display.value += '+'"></td>
+                    <td><input type="button" id="num"  value="1" onclick="calculator.display.value += '1'" class="button"></td>
+                    <td><input type="button" id="num"  value="2" onclick="calculator.display.value += '2'" class="button"></td>
+                    <td><input type="button" id="num"  value="3" onclick="calculator.display.value += '3'" class="button"></td>
+                    <td class="operator"><input type="button" id="num"  value="+" onclick="calculator.display.value += '+'" class="button"></td>
                 </tr>
                 <tr class="keys">
-                    <td><input type="button" id="num"  value="00" onclick="calculator.display.value += '0'"></td>
-                    <td><input type="button" id="num"  value="0" onclick="calculator.display.value += '0'"></td>
-                    <td><input type="button" id="num"  value="." onclick="calculator.display.value += '.'"></td>
-                    <td class="eval"><input type="button" id="result"  value="=" onclick="total()"></td>
+                    <td><input type="button" id="num"  value="00" onclick="calculator.display.value += '0'" class="button"></td>
+                    <td><input type="button" id="num"  value="0" onclick="calculator.display.value += '0'" class="button"></td>
+                    <td><input type="button" id="num"  value="." onclick="calculator.display.value += '.'" class="button"></td>
+                    <td class="eval"><input type="button" id="result"  value="=" onclick="total()" class="button"></td>
 
                 </tr>
             </table>
