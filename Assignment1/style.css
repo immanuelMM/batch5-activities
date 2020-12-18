@@ -1,0 +1,45 @@
+html {
+  background-color: azure;
+}
+body {
+  background-color:beige; 
+  margin: 100px; 
+  padding: 100px;
+}
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #428fbb;
+  height: 56px;
+  /* padding-left: 15px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header span {
+  font-size: 24px;
+  color: white;
+  padding-right: 15px;
+}
+h1{
+text-align: center;
+font-family: "Lucida Console", Courier, monospace;
+display: block;
+font-size: 36px;
+line-height: 48px;
+margin: 0.5em 0 0.5em;
+}
+.container p{
+  font-size: 19px;
+  margin: 2em 0;
+  font-family: 'MaisonNeue Book';
+  padding: 2px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  
+}
