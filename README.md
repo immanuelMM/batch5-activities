@@ -5,4 +5,4 @@
 5. [landing_page](/landing_page/index.html) and ![Image](src)
 6. [survey_form](/survey_form/index.html) and ![Image](src)
 7. [Calculator_js](/calculator/index.html) and ![Image](src)
-8. [code_challenge](https://jsfiddle.net/c3o0mgb4/6/)
+8. [code_challenge](https://jsfiddle.net/kyh8e351/7/)
