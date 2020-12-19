@@ -4,162 +4,160 @@
     box-sizing: border-box;
 }
 html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
   
 #header {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background:#fdca00;
-    height: 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 10px solid black;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:#fdca00;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 10px solid black;
 }
 #nav-bar {
-    display: flex;
-    flex-direction: row;
-    margin: 10em;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 10em;
+  list-style: none;
     
 }
 #nav-bar a{
-    color: ;
-    text-decoration: none;
-    color: azure;
-    letter-spacing: 10px;
+  color: ;
+  text-decoration: none;
+  color: azure;
+  letter-spacing: 5px;
 }
 .nav-link {
-    margin: 1em;
-    letter-spacing:4px;
-    font-size: 20px;
+  margin: 1em;
+  letter-spacing:4px;
+  font-size: 20px;
 }
 #header-img {
-    margin-left: 15rem;
-    color:  azure;
+  margin-left: 15rem;
+  color:  azure;
 }
 .image {
-    min-height:50vw;
-    margin-top: 4vw;
-    left: 0;
-    right: 0;
-    background-image: url(m.jpg);
+  min-height:50vw;
+  margin-top: 4vw;
+  left: 0;
+  right: 0;
+  background-image: url(m.jpg);
 }
 .image2 {
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    border-bottom: 10px solid black;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  border-bottom: 10px solid black;
 }
 
 #video {
-    padding: 6rem 0;  
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    max-width: 860px;
+  padding: 6rem 0;  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
      
 }
 .page-section {
-    padding: 6rem 0;
-  }
-  .page-section h2.section-heading {
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-  .page-section h3.section-subheading {
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: italic;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    margin-bottom: 4rem;
-  }
-  .bg-light {
-    background-color: #f8f9fa !important;
-  }
+  padding: 3rem 0;
+}
+.page-section h2.section-heading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.page-section h3.section-subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+}
   
-  a.bg-light:hover, a.bg-light:focus,
-  button.bg-light:hover,
-  button.bg-light:focus {
-    background-color: #dae0e5 !important;
-  }
-  #product .product-item {
-    max-width: 25rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #product .product-item .product-link {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-  } 
-  .product-item img{
-      height: 20vw;
-      width: 25vw;
-  } 
-  .product-hover {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(254, 209, 54, 0.9);
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity ease-in-out 0.25s;
-  }
-  
-  #product  .product-link:hover .product-hover {
-    opacity: 1;
-  }
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #dae0e5 !important;
+}
+#product .product-item {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#product .product-item .product-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+} 
+.product-item img{
+  height: 20vw;
+  width: 25vw;
+} 
+.product-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(254, 209, 54, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}  
+#product  .product-link:hover .product-hover {
+  opacity: 1;
+}
 .product-caption {
-    padding: 1.5rem;
-    text-align: center;
-    background-color: #fff;
-  }
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
 .product-caption-heading {
-    font-size: 1.5rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 700;
-    margin-bottom: 0;
-  }
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  margin-bottom: 0;
+}
 .product-caption-subheading {
-    font-style: italic;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-  .container {
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-  }
-  
-  .container  {
+  font-style: italic;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}  
+.container  {
   width: 100%;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
   margin-right: 10px;
   margin-left: 300px;
 }
-  .text-center {
-    text-align: center !important;
-  }
-  .text-uppercase {
-    text-transform: uppercase !important;
-  }
-  .col-xl,
+.text-center {
+  text-align: center !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.col-xl,
 .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg,
 .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
 .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm,
@@ -194,81 +192,71 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {background-color: #45a049;}
-.footer {
-  
-}
 #side-img img {
   height: 30vw;
   width: 30vw;
 }
 .footer {
-  grid-row: 1fr 1fr;
+  grid-row: 1fr;
   background-color:#c48560;
-  padding: 5vw;
+  padding: 10vw;
   text-align: center;
 }
 #map {
   /* border: 10px solid black; */
 }
-@media screen and (max-width: 600px) {
+@media(max-width:700px) {
   * {
     box-sizing: border-box;
-} 
-  body {
-    line-height:40px;
-    font-size:21px;
     width: 100%;
-    box-sizing: border-box;
-   }
-    #header {
-        width: 100%;
-        background-color: #fdca00;
+    font-size: 10px;
     }
-    #nav-bar {
-        width: 1px;
-        
-    }
-    #header-img{
-    margin-left: 2rem;
-    }
-    .image { 
-        min-height:50vw;
-        margin-top: 4vw;
-    }
-    .product-item img{
-      height: 60vw;
-      width: 80vw;
+  #header {
+      width: 100%;
+  }
+  #header-img {
+    margin-left: -1px;
+    width: 150px;
+    
+  }
+  #nav-bar {
+    display: none;
+  }
+ 
+  .nav-link {
+    margin: 1px;
+    letter-spacing:1px;
+    font-size: 3px;
+  }
+  .image2 {
+    width: 100%;
+    right: 0;
+  }
+  .page-section {
+    justify-content: center;
+    width: 100%;
   }
   .container {
-    max-width: 1000px;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: 5%;
+  } 
+  .product-item img {
+    height: 50vw;
+    width: 70vw;
+  
+  } 
+  .row {
+    width: 100%;
   }
-  .container  {
-  width: 100%;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-  margin-right: auto;
-  margin-left: auto;
-}
   #video {
-    height: 100vw;
-    width: 50vw;
+    padding: 10rem 0; 
+    width: 100vw;
+    height: 50px;
   }
   .footer {
-    background-color:#c48560;
-    padding: 1vw;
-    text-align: center;
-  }
-  #map {
-    height: 50vw;
-    width: 10vw;
-    border: 1000em;
-  }
-  iframe {
-    margin-left: 3vw;
-    height: 50vw;
-    width: 90vw;
-    ;
+    width: 100%;
+    padding: 1px;
   }
 }
