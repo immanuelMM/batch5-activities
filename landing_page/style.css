@@ -240,11 +240,11 @@ input[type=submit]:hover {background-color: #45a049;}
     width: 90%;
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 5%;
+    margin-left: 2%;
   } 
   .product-item img {
     height: 50vw;
-    width: 70vw;
+    width: 65vw;
   
   } 
   .row {
