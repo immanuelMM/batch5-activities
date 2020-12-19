@@ -1,4 +1,4 @@
-1. [Best_practice](/Assignement/index.html) and ![Image](src)
+1. [Best_practice](/Assignement1/index.html) and ![Image](src)
 2. [Tribute_page](/Tribute_page/index.html) and ![Image](src)
 3. [flex_chesboard](/Chess_board/index.html) and ![Image](src)
 4. [Grid_chessboard](/Grid-chessboard/index.html) and ![Image](src)
