@@ -108,15 +108,15 @@ button {
     float: right;
     position: fixed;
     left: 110px;
-    bottom: 35px;
+    top: 75px;
+    float: right;
     background-color: #dcdcdc;
     color: black;
 }
-#black {
-    float: right;
+#black {  
     position: fixed;
     left: 110px;
-    top: 75px;
+    bottom: 35px;
     background-color: #dcdcdc;
     color: black;
 }
