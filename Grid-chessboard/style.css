@@ -53,6 +53,26 @@ img {
 .item:hover {
     background-color: #bacb2b;
   }
+#fill {
+    background-image: url('black_images/pawn.png');
+    cursor: pointer;
+    /* background-color: darkseagreen; */
+}
+
+.empty {
+  display: inline-block;
+  background-color: #eeeed2;
+}
+.hold {
+  border: solid #ccc 4px;
+}
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
+.invisible {
+  display: none;
+}
   @media(max-width:700px){
 body{
     line-height:25px;

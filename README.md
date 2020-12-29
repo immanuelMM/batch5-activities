@@ -6,3 +6,4 @@
 6. [survey_form](/survey_form/index.html) and ![Image](src)
 7. [Calculator_js](/calculator/index.html) and ![Image](src)
 8. [code_challenge](https://jsfiddle.net/kyh8e351/7/)
+8. [chess_game](/functioning_chess/index.html)

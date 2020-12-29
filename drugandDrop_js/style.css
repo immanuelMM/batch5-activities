@@ -1,0 +1,58 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: darksalmon;
+    width: 45vw;
+    height: 45vw;   
+    grid-gap: -1px;
+}
+.fill {
+    background-image: url('./white_images/king.png');
+    position: relative;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.empty {
+    
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    background-color: seashell;
+}
+.hold {
+    border: solid #ccc 4px;
+}
+.hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+}
+.invisible {
+    display: none;
+}
+
+/* pawn */
+
+.fillpawnwhite {
+    background-image: url('./white_images/pawn.png');
+    position: relative;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+.fillpawnblack {
+    background-image: url('./black_images/pawn.png');
+    position: relative;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+/* .box-white {
+    background-color: #eeeed2;
+  }
+.box-black {
+    background-color: #85aa53;
+  } */
