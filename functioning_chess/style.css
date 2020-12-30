@@ -109,15 +109,27 @@ button {
     position: fixed;
     left: 110px;
     top: 75px;
-    float: right;
     background-color: #dcdcdc;
     color: black;
+}
+#white1 {
+	position: fixed;
+    left: 500px;
+	bottom: 30px;
+	color: black;
+	float: right;
 }
 #black {  
     position: fixed;
     left: 110px;
-    bottom: 35px;
+    bottom: 25px;
     background-color: #dcdcdc;
+    color: black;
+}
+#black1 {
+	position: fixed;
+    left: 500px;
+    top: 75px;
     color: black;
 }
 @media(max-width:700px){
