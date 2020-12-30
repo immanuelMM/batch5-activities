@@ -148,46 +148,17 @@ button {
         bottom: 20px;
 	}
 	#white1 {
-        margin-left: -150px;
+        margin-left: -230px;
         bottom: 70px;
     }
     #black1 {
-        margin-left: -150px;
+        margin-left: -230px;
         bottom: 20px;
     }
     .cell {
         float: left;
         height: 41px;
         width: 41px;
-
-    }
-}
-@media(max-width:800px){
-    body{
-        box-sizing: border-box;
-        margin-left: -100px;
-        height: 100px;
-	}
-    #white {
-        margin-left: -110px;
-        bottom: 100px;
-    }
-    #black {
-        margin-left: -110px;
-        bottom: 135px;
-	}
-	#white1 {
-        margin-left: -230px;
-        bottom: 170px;
-    }
-    #black1 {
-        margin-left: -230px;
-        bottom: 20px;
-    }
-    .cell {
-        float: left;
-        height: 37px;
-        width: 37px;
 
     }
 }
