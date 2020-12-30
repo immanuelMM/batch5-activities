@@ -70,10 +70,12 @@ function createPiece(cell) {
 	img = document.createElement('img')
 	img.setAttribute("data-piece", piece)
 	img.classList.add('piece')
+	
 
 	if (i == 0 || i == 1) {
 		img.src = `white_images/${piece}.png`
 		img.setAttribute("data-color", "white")
+		
 	}
 	else {
 		img.src = `black_images/${piece}.png`
