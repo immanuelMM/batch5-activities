@@ -177,9 +177,15 @@ button {
 	.controls {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		width: 100%;
+		width: 70%;
 		height: 100%;
 		margin-top: -3rem;
+		margin-left: 100px;
+	}
+	.controls button{
+		justify-items: stretch;
+		width: 100%;
+		margin: 1px;
 	}
 	#times {
 		margin-left: 300px;
