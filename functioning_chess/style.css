@@ -80,7 +80,7 @@ button {
 }
 #times {
 	text-align: center;
-	font-size: 29px;
+	font-size: 25px;
 	border-radius: 5px;
 }
 #whtmin {
@@ -186,7 +186,7 @@ button {
 		font-size: 15px;
 		padding: 10px;
 		border-radius: 5px;
-		width: 400px;
+		width: 500px;
 	}
 
 }
