@@ -50,7 +50,14 @@ body {
 #bench h2 {
 	font-size: 18px;
 }
-
+#bt{
+	background-color: #7fa650;
+	color: aliceblue;
+}
+#bt1{
+	background-color: #413e3c;
+	color: aliceblue;
+}
 img {
 	position: relative;
     display: block;
@@ -139,8 +146,8 @@ button {
 	width: 100px;
 	height: 100px;
 	margin-right: 10px;
-	
-	
+	background-color: #e6912c;
+	color: aliceblue;
 }
 @media(max-width:700px){
     body{
