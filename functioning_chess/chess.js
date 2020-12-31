@@ -88,7 +88,7 @@ function createPiece(cell) {
 function colorBoard(x,y) {
 	if (x % 2 == 0) {
 		if (y % 2 == 0) {
-			return '#85aa53' // black
+			return '#779455' // black
 		}
 		else {
 			return '#eeeed2' // white
@@ -99,7 +99,7 @@ function colorBoard(x,y) {
 			return '#eeeed2' //white
 		}
 		else {
-			return '#85aa53' // black
+			return '#779455' // black
 		}
 	}
 }
