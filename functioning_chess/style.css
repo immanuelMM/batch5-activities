@@ -142,7 +142,7 @@ button {
 	height: 100px;
 	margin-right: 10px;
 }
-@media(max-width:736x){
+@media(max-width:812px){
     body{
         box-sizing: border-box;
         margin-left: -100px;
@@ -181,96 +181,4 @@ button {
 	#buttons {
 		
 	}
-}
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
-		body{
-			box-sizing: border-box;
-			margin-left: -100px;
-			height: 100px;
-		}
-		#white {
-			margin-left: -110px;
-			bottom: 100px;
-		}
-		#black {
-			margin-left: -110px;
-			bottom: 150px;
-		}
-		#white1 {
-			margin-left: -200px;
-			bottom: 170px;
-		}
-		#black1 {
-			margin-left: -200px;
-			bottom: 20px;
-		}
-		.cell {
-			float: left;
-			height: 41px;
-			width: 41px;
-	
-		}
-		.controls {
-		
-			margin-left: 4em;
-			width: 25rem;
-			height: 3rem;
-			margin-top: 1rem;
-			justify-content: start;
-		}
-		#buttons {
-			
-		}
-	}
-	@media only screen 
-    and (min-device-width : 414px) 
-    and (max-device-width : 736px)
-    and (device-width : 414px)
-    and (device-height : 736px)
-    and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 3) 
-    and (-webkit-device-pixel-ratio : 3)
-{ 
-	body{
-		box-sizing: border-box;
-		margin-left: -100px;
-		height: 100px;
-	}
-	#white {
-		margin-left: -110px;
-		bottom: 100px;
-	}
-	#black {
-		margin-left: -110px;
-		bottom: 100px;
-	}
-	#white1 {
-		margin-left: -200px;
-		bottom: 100px;
-	}
-	#black1 {
-		margin-left: -200px;
-		bottom: 20px;
-	}
-	.cell {
-		float: left;
-		height: 41px;
-		width: 41px;
-
-	}
-	.controls {
-		margin-left: 5em;
-		width: 25rem;
-		height: 3rem;
-		margin-bottom: 20px;
-		justify-content: start;
-		margin-top: -30px;
-	}
-	#buttons {
-		
-	}
-
 }
