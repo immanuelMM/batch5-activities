@@ -164,10 +164,11 @@ button {
 	}
 	#white1 {
         margin-left: -200px;
-        bottom: 220px;
+        bottom: 210px;
     }
     #black1 {
-        margin-left: -200px;
+		margin-left: -200px;
+		margin-top: -30px;
     }
     .cell {
         float: left;
@@ -202,7 +203,7 @@ button {
 	}
 	#startInstructions button{
 		margin-left: -100px;
-		margin-top: 155px;
+		margin-top: 185px;
 		width: 105px;;
 	}
 
