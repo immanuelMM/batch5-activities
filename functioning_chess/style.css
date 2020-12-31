@@ -179,8 +179,8 @@ button {
 	.controls {
 		display: grid;
 		grid-template-columns: 1fr;
-		width: 30rem;
-		height: 3rem;
+		width: 100%;
+		height: 100%;
 		margin-top: -3rem;
 		text-align: center;
 	}
@@ -190,7 +190,7 @@ button {
 		font-size: 15px;
 		padding: 10px;
 		border-radius: 50px;
-		width: 200px;
+		width: 100%;
 		margin-bottom: 30px;
 		color: aliceblue;
 	}
