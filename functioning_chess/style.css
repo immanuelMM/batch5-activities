@@ -162,9 +162,17 @@ button {
         margin-left: -110px;
         bottom: 190px;
 	}
+	#black1 button{
+		width: 100px;
+		font-size: 25px;
+	 }
 	#white1 {
         margin-left: -200px;
-        bottom: 210px;
+		bottom: 210px;
+	}
+	#white1 button{
+	   width: 100px;
+	   font-size: 25px;
     }
     #black1 {
 		margin-left: -200px;
