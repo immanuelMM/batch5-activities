@@ -201,3 +201,17 @@ button {
 	}
 
 }
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+	and (-webkit-device-pixel-ratio : 3) 
+	{ 
+		#black {
+			margin-left: -110px;
+			bottom: 120px;
+		}
+		#white1 {
+			margin-left: -200px;
+			bottom: 130px;
+		}
+	}
