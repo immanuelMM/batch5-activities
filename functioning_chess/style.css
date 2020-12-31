@@ -201,9 +201,9 @@ button {
 		float: left;
 	}
 	#startInstructions button{
-		margin-left: -195px;
+		margin-left: -100px;
 		margin-top: 155px;
-	
+		width: 105px;;
 	}
 
 }
