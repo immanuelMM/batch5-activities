@@ -123,7 +123,7 @@ button {
 #white1 {
 	position: fixed;
     left: 450px;
-	bottom: 110px;
+	bottom: 130px;
 	color: black;
 	float: right;
 }
@@ -136,8 +136,18 @@ button {
 #black1 {
 	position: fixed;
     left: 450px;
-    top: 60px;
-    color: black;
+    top: 35px;
+	color: black;
+}
+#black1 button{
+	background-color: #26211b;
+	color: white;
+	width: 90px;
+}
+#white1 button{
+	background-color: #26211b;
+	color: white;
+	width: 90px;
 }
 #startInstructions button{
 	float: left;
@@ -147,6 +157,7 @@ button {
 	margin-top: 200px;
 	background-color: #33540ac2;
 	color: aliceblue;
+	border-radius: 20px;
 }
 @media(max-width:700px){
     body{
@@ -168,7 +179,7 @@ button {
 	 }
 	#white1 {
         margin-left: -200px;
-		bottom: 210px;
+		bottom: 200px;
 	}
 	#white1 button{
 	   width: 100px;
@@ -176,7 +187,7 @@ button {
     }
     #black1 {
 		margin-left: -200px;
-		margin-top: -30px;
+		margin-top: 1px;
     }
     .cell {
         float: left;
@@ -210,9 +221,10 @@ button {
 		float: left;
 	}
 	#startInstructions button{
-		margin-left: -100px;
+		margin-left: -146px;
 		margin-top: 185px;
-		width: 105px;;
+		width: 200px;;
+		text-shadow: 10px 10px 10px;
 	}
 
 }

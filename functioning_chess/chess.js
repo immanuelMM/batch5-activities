@@ -423,7 +423,6 @@ function gameOver() {
 	gameOn = false
 }
 
-
 function screenDisplay(text) {
 	display = document.querySelector('#screen > h2')
 	display.innerHTML = text

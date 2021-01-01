@@ -79,7 +79,9 @@ const whtTicker = function() {
     min--;
   document.getElementById('whtsec').textContent = sec;
   document.getElementById('whtmin').textContent = min;
+
   }
+
   else {
   white.style.background = "red";
  };
