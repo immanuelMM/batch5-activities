@@ -12,77 +12,77 @@ let to_coords = []
 let to_cell = ''
 let gameOn = true
 
-let board = document.querySelector('#board')
+let board = document.querySelector('#board') // select the html id board
 
 
 function boardCreation() {
-	for (let i = 7; i >= 0; i--) {
-		for (let j = 0; j < 8; j++) {
+	for (let i = 7; i >= 0; i--) { //row
+		for (let j = 0; j < 8; j++) { // collum
 
-			cell = document.createElement('div')
-			cell.id = `${j},${i}`;
+			cell = document.createElement('div') // div
+			cell.id = `${j},${i}`; // id = j=collum 0 < 8 J=0 ++ / i=row 7=> 0 7--
 
-			if (j == 0) {
-				cell.classList.add('cell', 'row')
+			if (j == 0) { // all collum 0 
+				cell.classList.add('cell', 'row') // class=cell row
 			}
 			else {
-				cell.classList.add('cell')
+				cell.classList.add('cell') // all is cell
 			}
 
 
-			cell.style.backgroundColor = colorBoard(i, j)
-			createPiece(cell)
+			cell.style.backgroundColor = colorBoard(i, j) // function for background color
+			createPiece(cell) // function for craete chess pieces
 
 
-			board.appendChild(cell)
+			board.appendChild(cell) // htnl id board append cell
 		}
-	}
-	screenDisplay(`${turn_color[0].toUpperCase() + turn_color.slice(1)} is first!`)
+	} 
+	screenDisplay(`${turn_color[0].toUpperCase() + turn_color.slice(1)} is first!`) // function screen display
 }
 
 
-function createPiece(cell) {
-		i = cell.id.split(",")[1]
-		j = cell.id.split(",")[0]
+function createPiece(cell) { 
+		i = cell.id.split(",")[1] // row
+		j = cell.id.split(",")[0] // collum
 
-		let piece = ''
+		let piece = '' // initial no value
 		if (i == 1 || i == 6) {
-			piece = 'pawn'
+			piece = 'pawn' // 0 is the position of white pawn and 6 is the black
 		}
 		else if ((i == 0 || i == 7) && (j == 0 || j == 7)) {
-			piece = 'rook'
+			piece = 'rook' // 0row and 7collum position of white and black then 0j is rook left side 7j is rook rigth
 		}
 		else if ((i == 0 || i == 7) && (j == 1 || j == 6)) {
-			piece = 'knight'
+			piece = 'knight' // 0row and 7collum position of white and black 1j knight left side 6j is knight right
 		}
 		else if ((i == 0 || i == 7) && (j == 2 || j == 5)) {
-			piece = 'bishop'
+			piece = 'bishop'// 0row and 7collum position of white and black 2j bishop left side 5j is bishop right
 		}
 		else if ((i == 0 || i == 7) && j == 4) {
-			piece = 'king'
+			piece = 'king' // 0row and 7collum position of white and black 4j both black and white
 		}
 		else if ((i == 0 || i == 7) && j == 3) {
-			piece = 'queen'
+			piece = 'queen' // 0row and 7collum position of white and black 3j both black and white
 		}
 		else {
 			return
 		}
-	img = document.createElement('img')
-	img.setAttribute("data-piece", piece)
-	img.classList.add('piece')
+	img = document.createElement('img') // element for img src
+	img.setAttribute("data-piece", piece) // attribute date-piece=black or white
+	img.classList.add('piece') // class=pieces
 	
 
-	if (i == 0 || i == 1) {
-		img.src = `white_images/${piece}.png`
-		img.setAttribute("data-color", "white")
+	if (i == 0 || i == 1) { // 0 and 1 for white
+		img.src = `white_images/${piece}.png` // insert the value to src image
+		img.setAttribute("data-color", "white") //attrribute data-color=white
 		
 	}
 	else {
-		img.src = `black_images/${piece}.png`
-		img.setAttribute("data-color", "black")
+		img.src = `black_images/${piece}.png` // insert the value to src image
+		img.setAttribute("data-color", "black") // attribute data-color=black
 	}
 
-	cell.appendChild(img)
+	cell.appendChild(img) // append in cell with image
 }
 
 function colorBoard(x,y) {
@@ -104,41 +104,41 @@ function colorBoard(x,y) {
 	}
 }
 
-
-let bench = document.getElementById('bench')
+// create becnh for black  and white
+let bench = document.getElementById('bench') // get the html element for id
 
 function benchCreation() {
 
-for (let j = 0; j < 2; j++) {
+for (let j = 0; j < 2; j++) {  // only 3 collum for bench
 
-	let color_bench = document.createElement('div')
-	let header = document.createElement('h2')
-	let next_bench = document.createElement('br')
+	let color_bench = document.createElement('div') // div for bench
+	let header = document.createElement('h2') // h2
+	let next_bench = document.createElement('br') // br
 
-	if (j == 0) {
-		color_bench.id = 'white'
-		header.innerHTML = 'Player 1'
+	if (j == 0) { // 0 is for player white
+		color_bench.id = 'white' // id=white
+		header.innerHTML = 'Player 1' // insert to h2
 	}
-	else {
-		color_bench.id = 'black'
-		header.innerHTML = 'Player 2'
+	else {// 0 else player for black
+		color_bench.id = 'black' //id=black
+		header.innerHTML = 'Player 2' // insert to h2
 	}
 
-	color_bench.appendChild(header)
+	color_bench.appendChild(header) // appendchild
 
-	for (let i = 0; i < 16; i++) {
+	for (let i = 0; i < 16; i++) {// 16 row for black and white
 
-		cell = document.createElement('div')
-		cell.id = i
+		cell = document.createElement('div') // create div
+		cell.id = i // each cell have id 1 to 16
 
-		if (i % 16 == 0) {
-			cell.classList.add('bench', 'open', 'row')
+		if (i % 16 == 0) { // if becnh is 0 it's mean empty
+			cell.classList.add('bench', 'open', 'row') // becnh open for 16 piecec got eaten 
 		}
 		else {
-			cell.classList.add('bench', 'open')
+			cell.classList.add('bench', 'open') // this class is for a pieces got eaten
 		}
 
-		color_bench.appendChild(cell)
+		color_bench.appendChild(cell) // append 
 	}
 	bench.appendChild(next_bench)
 	bench.appendChild(color_bench)
@@ -153,24 +153,24 @@ benchCreation()
 document.body.addEventListener('click', function(e) {
 
 	if ((e.target.className === 'piece' || e.target.classList.contains('cell')) && gameOn) {
-		nextMove(e)
+		nextMove(e) // function move
 	}
 	else if (e.target.innerHTML === 'New Game') {
-		newGame()
+		newGame() // function nextgame
 	}
 	else if (e.target.innerHTML === 'Undo Move') {
 		if (turns.length > 0) {
-			revertTurn()
-			switchTurn()
+			revertTurn() // function revert
+			switchTurn() // function switch
 			screenDisplay(`${turn_color[0].toUpperCase() + turn_color.slice(1)} undid their last move`)
 		}
 		else {
-			removeSelection()
+			removeSelection() // function remove selection
 		}
 	}
 
 })
-
+// function for new game
 function newGame() {		
 	turn_color = "white"
 	turns = []
@@ -185,7 +185,7 @@ function newGame() {
 	gameOn = true
 }
 
-
+//function for nextmove
 function nextMove(e) {
 
 	to_cell = e.target.className === 'piece' ? e.target.parentElement : e.target
@@ -217,7 +217,7 @@ function nextMove(e) {
 		}
 	}
 }
-
+// removing the selected cell
 function removeSelection() {
 	if (from_cell.classList) {
 		from_cell.classList.remove('selected')

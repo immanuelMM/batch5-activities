@@ -6,4 +6,5 @@
 6. [survey_form](/survey_form/index.html) 
 7. [Calculator_js](/calculator/index.html) 
 8. [code_challenge](https://jsfiddle.net/kyh8e351/7/)
-8. [chess_game](/functioning_chess/index.html)
+9. [chess_game](/functioning_chess/index.html)
+10. [Card_game](https://jsfiddle.net/ue3ody0m/91/)

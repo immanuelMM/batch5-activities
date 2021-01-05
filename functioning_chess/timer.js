@@ -128,7 +128,7 @@ const blkMaster = function () {
 };
   // white's function container function
 const whtMaster = function () {
-  blkCountdown();
+   blkCountdown();
   whtStop();
   white.style.pointerEvents = "none";
   black.style.pointerEvents = "auto";

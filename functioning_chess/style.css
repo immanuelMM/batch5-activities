@@ -54,6 +54,7 @@ body {
 	background-color: #7fa650;
 	color: aliceblue;
 }
+
 #bt1{
 	background-color: #413e3c;
 	color: aliceblue;
@@ -63,18 +64,22 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 85%;
     height: 45px;
     width: 45px;
 }
 
 .selected img {
-	height: 46.875px;
-	width: 46.875px;
-	margin-top: 0px;
+	background-color:#bacb2bc2;
+	height: 50px;
+	width: 50px;
+	margin-top: -10px;
+	border-radius: 10px;
 }
-
+.piece img {
+	margin: 100px;
+}
 button {
 	margin-left: 30px;
 	font-size: 20px;
