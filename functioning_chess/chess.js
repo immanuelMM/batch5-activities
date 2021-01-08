@@ -34,7 +34,7 @@ function boardCreation() {
 			createPiece(cell) // function for craete chess pieces
 
 
-			board.appendChild(cell) // htnl id board append cell
+			board.appendChild(cell) // html id board append cell
 		}
 	} 
 	screenDisplay(`${turn_color[0].toUpperCase() + turn_color.slice(1)} is first!`) // function screen display

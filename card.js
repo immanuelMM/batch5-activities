@@ -12,36 +12,51 @@ for (let i = 0; i < 4; i++){
 } 
 return deck;
 }
-
+// shuffle
 function shuffle(card) {
 	for(var j, x, i = card.length; i; j = parseInt(Math.random() * i), x = card[--i], card[i] = card[j], card[j] = x);
 	return card; 
-
 }
-function ascending(ascend){
+//function ascend
+function ascending(){
 	var ascend = Getcard();
 	ascend.sort(function(a, b){return a-b});
 	return ascend;
 }
-function Descending(){
-	descend.sort(function(a, b){return b-a});
+//function Descend
+function Descending(desc){
+		var desc = Getcard();
+    desc.reverse();
+    return desc
 }
+// deal 
 
-//shuffle
+function deal(deck){
+    let hand = [];
+    while(hand.length < 2){
+        hand.push(deck.pop());
+    }
+    return hand
+}
+//shuffle output
 var myDeck = Getcard();
 console.log('shuffle');
 console.log(shuffle(myDeck)); 
 
-//Arrange by suit
+//Arrange by suit output
 var myDeck = Getcard();
 console.log('Arrange by suit');
 console.log(myDeck); 
 
-//accending and deccending
+//accending and deccending output
 console.log('Accending and Deccending');
 var a = ascending(myDeck);
 var descend = Getcard();
-var b = Descending(descend);
+var b =	Descending(descend);
 console.log(a);
 console.log('decend');
 console.log(b);
+
+//deal one card output
+var myDeck = Getcard();
+console.log(deal(myDeck));
