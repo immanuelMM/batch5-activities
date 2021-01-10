@@ -1,4 +1,20 @@
+
+//Global variable for DOM
+var DOMdeck = document.getElementById('deck');
+var DOMdeal = document.getElementById('deal');
+var DOMnum = document.getElementById('num');
+var DOMhistory = document.getElementById('history');
+var DOMbtn = document.getElementById('deal-btn');
+var DOMreset = document.getElementById('btn-shuffle');
+var DOMpre = document.getElementById("pre");
+var DOMnext = document.getElementById("next");
+
+var re = []; // card deal history empty
+var deckCrad = new shuffle();// new array
+
+
 //function for creating deck
+
 function Getcard(){
 
     let suits  = ["&hearts;","&diams;","&spades;","&clubs;"];
@@ -35,57 +51,103 @@ function dealCard(deck){
     return deal;  
 
 }
-// shuffle deck and back to zero
-function reshuffle(){
+
+function PreNext(){
     
-}
-function cardName(card){
-    switch(card){
-        case ("&spades;"):
-            return "Spades";
-        case ("&hearts;"):
-            return "Hearts";
-        case ("&diams; "):
-            return "Diamonds";
-        case ("&clubs; "):
-            return "Clubs";
-        default:
-            return card;
+    for(var i=1; i < deckCrad.length; i++){
+        
+        let a = DOMhistory.innerHTML;
+        
+        DOMpre.disabled = false;
+        
+        if(a = a[i]){
+            
+            DOMnext.disabled = false;
+            
+        }
+    
     }
 }
 
+DOMdeck.innerHTML = deckCrad; // get the deck 
 
-var deckCrad = new shuffle();// new array
+DOMnum.innerHTML = deckCrad.length; // get the length of deck
 
-var re = []; // card deal history empty
+DOMpre.disabled = true;
 
-document.getElementById('deck').innerHTML = deckCrad; // get the deck 
-
-document.getElementById('num').innerHTML = deckCrad.length; // get the length of deck
+DOMnext.disabled = true;
 
 // click deal button
-document.getElementById('deal-btn').addEventListener('click', ()=>{
+
+DOMpre.addEventListener('click', function(){
+    
+    let b = re.shift();
+
+    deckCrad.push(b)
+
+    DOMhistory.innerHTML = re;
+   
+    if(re == 0){
+
+        DOMpre.disabled = true;
+   
+    }else{
+   
+        DOMnum.innerHTML = deckCrad.length;
+   
+        DOMdeck.innerHTML = deckCrad;
+   
+        DOMdeal.innerHTML = b;  
+    }
+});
+
+DOMnext.addEventListener('click', ()=>{
+    
+ 
+
+});
+
+DOMbtn.addEventListener('click', ()=>{
     
     let dealed = dealCard(deckCrad); // deal one card
+    if(deckCrad == 0 ){
+        DOMbtn.disabled = true;
+        DOMdeck.innerHTML = "<h2 style='color:red;'>No more available card</h2>"
     
-    // let suitsname = cardName(arr);
-    // console.log(suitsname);
-    // document.getElementById('name-suits').innerHTML = suitsname;
+    }else{
+    
+    PreNext()
+    
+    re.push(dealed); // push to cartd history  
 
-    document.getElementById('deck').innerHTML = deckCrad; // if pop() one card it will decreasing
+    DOMhistory.innerHTML = re; //get the card history storing in array
+        
+    DOMdeck.innerHTML = deckCrad;//get the latest deck
     
-    document.getElementById('deal').innerHTML = dealed; // get the deal
+    DOMdeal.innerHTML = dealed; // get the deal
     
-    document.getElementById('num').innerHTML = deckCrad.length; // will see if the the is decreasing
-    
-    re.push(dealed); // push to cartd history
+    DOMnum.innerHTML = deckCrad.length; // get the latest number of card
 
-    document.getElementById('history').innerHTML = re; //get the card history storing in array
+    }     
+});
+// reset card and shuffle
+DOMreset.addEventListener('click', ()=>{
+    
+    var b = deckCrad = shuffle(); // back to 52 cards
+    
+    DOMdeck.innerHTML = b; // get the deck
+    
+    DOMnum.innerHTML = b.length; // get the numbers of card
+    
+    DOMhistory.innerHTML = re = []; // reset history
+    
+    DOMdeal.innerHTML = ""; // reset deal card
 
 });
-document.getElementById('btn-shuffle').addEventListener('click', ()=>{
 
-});
+
+
+
 
 
 
