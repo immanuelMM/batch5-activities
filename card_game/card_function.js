@@ -10,16 +10,16 @@ var DOMpre = document.getElementById("pre");
 var DOMnext = document.getElementById("next");
 
 var re = []; // card deal history empty
+var nextC = [];
 var deckCrad = new shuffle();// new array
-
 
 //function for creating deck
 
 function Getcard(){
 
-    let suits  = ["&hearts;","&diams;","&spades;","&clubs;"];
+    let suits  = ["&hearts; ","&diams; ","&spades; ","&clubs; "];
 
-    let values = [ "A","2","3","4","5","6","7","8","9","10","J","Q","k",];
+    let values = [ "A ","2 ","3 ","4 ","5 ","6 ","7 ","8 ","9 ","10 ","J ","Q ","k ",];
 
     let deck = [];
 
@@ -28,9 +28,12 @@ function Getcard(){
         for(let x = 0; x < 13; x++){
 
             let card =  suits[i] + values[x];
+   
             deck.push(card);
-    }  
-} 
+   
+        }  
+
+    }
 return deck;
 }
 // shuffle
@@ -54,7 +57,7 @@ function dealCard(deck){
 
 function PreNext(){
     
-    for(var i=1; i < deckCrad.length; i++){
+    for(var i=0; i < deckCrad.length; i++){
         
         let a = DOMhistory.innerHTML;
         
@@ -69,7 +72,7 @@ function PreNext(){
     }
 }
 
-DOMdeck.innerHTML = deckCrad; // get the deck 
+DOMdeck.innerHTML = "<p>" + deckCrad + "</p>"; // get the deck 
 
 DOMnum.innerHTML = deckCrad.length; // get the length of deck
 
@@ -83,35 +86,49 @@ DOMpre.addEventListener('click', function(){
     
     let b = re.shift();
 
-    deckCrad.push(b)
+    deckCrad.push(b);
 
-    DOMhistory.innerHTML = re;
+    nextC.push(b)
+    console.log(nextC);
+    DOMhistory.innerHTML = re.reverse();
    
     if(re == 0){
 
         DOMpre.disabled = true;
-   
-    }else{
-   
+
+        DOMdeal.innerHTML = "";
+
         DOMnum.innerHTML = deckCrad.length;
-   
+    
+    }else{
+        
+        DOMnum.innerHTML = deckCrad.length;
+
         DOMdeck.innerHTML = deckCrad;
    
         DOMdeal.innerHTML = b;  
+
     }
 });
+var next =  nextC;
 
 DOMnext.addEventListener('click', ()=>{
     
- 
+    let x = next.shift();
 
+    let y = deckCrad.pop(x);
+   console.log(y);
+   console.log(x);
 });
 
 DOMbtn.addEventListener('click', ()=>{
     
     let dealed = dealCard(deckCrad); // deal one card
+  
     if(deckCrad == 0 ){
+  
         DOMbtn.disabled = true;
+  
         DOMdeck.innerHTML = "<h2 style='color:red;'>No more available card</h2>"
     
     }else{
@@ -120,7 +137,7 @@ DOMbtn.addEventListener('click', ()=>{
     
     re.push(dealed); // push to cartd history  
 
-    DOMhistory.innerHTML = re; //get the card history storing in array
+    DOMhistory.innerHTML = re.reverse(); //get the card history storing in array
         
     DOMdeck.innerHTML = deckCrad;//get the latest deck
     
