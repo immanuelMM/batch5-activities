@@ -1,4 +1,4 @@
-{{ Mawe }}
+H1- mawe
 1. [Best_practice](/Assignment1/index.html) 
 2. [Tribute_page](/Tribute_page/index.html) 
 3. [flex_chesboard](/Chess_board/index.html) 
