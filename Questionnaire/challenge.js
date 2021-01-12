@@ -97,6 +97,7 @@ var questions = [q1, q2, q3 ,q4, q5, q6 , q7, q8, q9 , q10, q11, q12, q13, q14, 
         }
         
         this.displayScore(addScore);
+        this.consecutive(addScore);
     }
 
 // add a method to a constrctor that can display a score
@@ -107,6 +108,52 @@ var questions = [q1, q2, q3 ,q4, q5, q6 , q7, q8, q9 , q10, q11, q12, q13, q14, 
         console.log('--*++++++++++++++++++++++++++++*--');
         console.log(' ');
  
+    }
+// add view add consecutive correct answer 
+    Q.prototype.consecutive = function(score) {
+        
+        if(score == 5){
+       
+            alert('YOU GOT 5 CONSECUTIVE CORRECT ANSWER');
+       
+        }else if(score == 10){
+       
+            alert('YOU GOT 10 CONSECUTIVE CORRECT ANSWER');
+       
+        }else if(score == 15){
+       
+            alert('YOU GOT 15 CONSECUTIVE CORRECT ANSWER');
+       
+        }else if(score == 20){
+       
+            alert('YOU GOT 20 CONSECUTIVE CORRECT ANSWER');
+       
+        }else if(score == 25){
+       
+            alert('YOU GOT 25 CONSECUTIVE CORRECT ANSWER');
+       
+        }else if(score == 30){
+       
+            alert('YOU GOT 30 CONSECUTIVE CORRECT ANSWER');
+       
+        }else if(score == 35){
+       
+            alert('YOU GOT 35 CONSECUTIVE CORRECT ANSWER');
+       
+        }else if(score == 40){
+       
+            alert('YOU GOT 40 CONSECUTIVE CORRECT ANSWER');
+       
+        }else if(score == 45){
+       
+            alert('YOU GOT 45 CONSECUTIVE CORRECT ANSWER');
+       
+        }else if(score == 50){
+       
+            alert('YOU GOT 25 CONSECUTIVE CORRECT ANSWER');
+       
+        }
+    
     }
 
 // function for calculate the score           
@@ -144,6 +191,7 @@ var questions = [q1, q2, q3 ,q4, q5, q6 , q7, q8, q9 , q10, q11, q12, q13, q14, 
         questions[n].checkAnswer(parseInt(answer), keepScore);
         
     }
+
     
     nextQuestion();
 
