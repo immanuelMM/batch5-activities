@@ -9,8 +9,22 @@
         <h1>Quiz Game</h1>
         
         <div id="container">
-           
+            <div id="answer">
+
+            </div>
         </div>
+        <p id="demo"></p>
+        <input type="number" id="myNumber" value="0">
+        
+        <button onclick="myFunction()">send</button>
+        
         <script src="challenge.js"></script>
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myNumber").value;
+              document.getElementById("demo").innerHTML = "your answer is  - " +  x ;
+            }
+            </script>
     </body>
 </html>

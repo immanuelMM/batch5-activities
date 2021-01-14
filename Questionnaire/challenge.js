@@ -272,31 +272,28 @@ var questions = [q1, q2, q3 ,q4, q5, q6 , q7, q8, q9 , q10, q11, q12, q13, q14, 
 
 // add properties and method that display a Question
     Q.prototype.displayQuestion = function() {
-      var questionDom = document.querySelector('#container');
+  
+      let questionDom = document.querySelector('#container'); // get id container
       
-      let div = document.createElement('h2'); div.setAttribute('id' , 'question');
-     
-      var p  = document.createElement('p');   
-     
-      questionDom.appendChild(div);
-
-      document.getElementById('question').innerHTML = this.question;
-
-
-        for (let i = 0; i < this.answers.length; i++) {
-            
-         let div = document.createElement('p'); div.setAttribute('id' , i);
-      
-         questionDom.appendChild(div);
- 
-        }
-        for (let i = 0; i < this.answers.length; i++) {
-            
-         document.getElementById(i).innerHTML = i + " - " + this.answers[i]
-      
- 
-        }
+      let div = document.createElement('h2'); div.setAttribute('id' , 'question'); //create element h2 and add attribute class with id question
         
+      questionDom.appendChild(div); // apend inside container 
+
+      document.getElementById('question').innerHTML = this.question; // invoke the question
+
+
+        for (let i = 0; i < this.answers.length; i++) { // create loop for answer
+            
+         let ans = document.createElement('p'); ans.setAttribute('id' , i); // create element p ans et attribute id with number
+      
+         questionDom.appendChild(ans); // append inside the container
+ 
+        }
+        for (let i = 0; i < this.answers.length; i++) { // loop for the value 
+            
+         document.getElementById(i).innerHTML = "<b>" + i +"</b>" + " - " + this.answers[i] // get the answer for the3 question
+      
+        }
  
     } 
 
@@ -321,66 +318,18 @@ var questions = [q1, q2, q3 ,q4, q5, q6 , q7, q8, q9 , q10, q11, q12, q13, q14, 
         }
         
         this.displayScore(addScore);
-        this.consecutive(addScore);
+        // this.consecutive(addScore);
     }
 
 // add a method to a constrctor that can display a score
     Q.prototype.displayScore = function(score) {
 
-        console.log('Your total score is: + ' + score + ' Points');
+         return document.getElementById('answer').innerHTML = 'Your total score is: + ' + score + ' Points'; 
+        console.log(a);
  
-        console.log('--*++++++++++++++++++++++++++++*--');
-        console.log(' ');
- 
-    }
-// add view add consecutive correct answer 
-    Q.prototype.consecutive = function(score) {
-        
-        if(score == 5){
-       
-            alert('YOU GOT 5 CONSECUTIVE CORRECT ANSWER');
-       
-        }else if(score == 10){
-       
-            alert('YOU GOT 10 CONSECUTIVE CORRECT ANSWER');
-       
-        }else if(score == 15){
-       
-            alert('YOU GOT 15 CONSECUTIVE CORRECT ANSWER');
-       
-        }else if(score == 20){
-       
-            alert('YOU GOT 20 CONSECUTIVE CORRECT ANSWER');
-       
-        }else if(score == 25){
-       
-            alert('YOU GOT 25 CONSECUTIVE CORRECT ANSWER');
-       
-        }else if(score == 30){
-       
-            alert('YOU GOT 30 CONSECUTIVE CORRECT ANSWER');
-       
-        }else if(score == 35){
-       
-            alert('YOU GOT 35 CONSECUTIVE CORRECT ANSWER');
-       
-        }else if(score == 40){
-       
-            alert('YOU GOT 40 CONSECUTIVE CORRECT ANSWER');
-       
-        }else if(score == 45){
-       
-            alert('YOU GOT 45 CONSECUTIVE CORRECT ANSWER');
-       
-        }else if(score == 50){
-       
-            alert('YOU GOT 25 CONSECUTIVE CORRECT ANSWER');
-       
-        }
-    
     }
 
-// function for calculate the score           
+   // function for calculate the score           
     function score() {
  
         let addScore = 0; // initial value 0
@@ -400,20 +349,19 @@ var questions = [q1, q2, q3 ,q4, q5, q6 , q7, q8, q9 , q10, q11, q12, q13, q14, 
     let keepScore = score(); // store a score in a new var
 
   //function for reshuffle a question 
-    function nextQuestion() {
-
+  
+    function nextQuestion() { 
         let n = Math.floor(Math.random() * questions.length);
         
         questions[n].displayQuestion();
         
-      //   answer = prompt('Please select the number of correct answer.');
-
-      //   if(answer != "exit"){
+        answer =  document.getElementById("myNumber").value;
+              //   if(answer != "exit"){
       //       questions[n].checkAnswer(parseInt(answer), keepScore);
-      //       nextQuestion();
+            
       //   }
-      //   questions[n].checkAnswer(parseInt(answer), keepScore);
-        
+        questions[n].checkAnswer(answer, keepScore);
+        // nextQuestion();
     }
 
     
