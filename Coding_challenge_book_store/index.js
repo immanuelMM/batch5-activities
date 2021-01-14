@@ -10,7 +10,6 @@
 // Create a function listInventory() that will display all of books in the inventory, print title quantity and value;
 
 
-
 var store = {
     name: "Bookstore",
     inventory_list: [ ],
@@ -43,14 +42,28 @@ function sellBook(){
 }
 
 function totalEarnings(){
+  
+    var total = 0;
 
+    for (i = 0; i < store.inventory_list.length ; i++){
+        
+        var arr = store.inventory_list[i].value;
 
+        var a = parseInt(arr);
+        
+        total  += a;
+    } 
+  
+    console.log(store.name);
+  
+    console.log(" total earnings  " + total);
 
 }
 
 function listInventory(){
     
     console.log("Book Inventory");
+  
     console.log("");
 
     for (i = 0; i < store.inventory_list.length ; i++){
