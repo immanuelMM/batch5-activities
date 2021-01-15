@@ -22,25 +22,90 @@ var book = {
     value:"100.00",
 }
 
+var stock = [];
 
 function addBook(title , quantity, value){
 
-    let obeject = { tittle:title , quantity:quantity, value:value}
+    let obeject = { title:title , quantity:quantity, value:value}
+ 
     
-    store.inventory_list.push(obeject);
+    for (i = 0; i < store.inventory_list.length ; i++){
         
-    console.log("Successfully addad Book with Title " + title + " Quantity " + quantity + " and value of " + value);
+        var arr = store.inventory_list[i].title;
+       
+    }
+    
+    if(arr == title){
+      
+        stock.push(obeject);
+   
+        console.log("It's already in store the book move to stockroom");
+        
+   
+    }else{
+   
+        store.inventory_list.push(obeject);
+    
+        console.log("Successfully addad Book with Title " + title + " Quantity " + quantity + " and value of " + value);
+   
+    }
     
 }
 
-function restockBook(){
+function restockBook(title, quantity){
+
+    for (i = 0; i < store.inventory_list.length ; i++){
+        
+        var arr = store.inventory_list[i];
+
+    }
+    
+    if(arr == null){
+
+        store.inventory_list.push(stock);
+    
+    }
 
 }
 
-function sellBook(){
+function sellBook(title , quantity){
+    
+    for (i = 0; i < store.inventory_list.length ; i++){
+        
+        var arr = store.inventory_list[i];
 
-}
-
+        if(arr.title == title){
+  
+            if(arr.quantity == 0){
+           
+                console.log("The book you are looking for is out of stock");
+           
+            }else if (arr.quantity < quantity) {
+        
+                console.log(`Only ${store.inventory_list[i].quantity} stocks left.`);
+            
+            }else if(arr.title == title && null ){
+            
+                console.log("yea");
+            
+            } else {
+           
+                let sold = arr.quantity - quantity
+            
+                arr.quantity = sold;
+                
+                console.log("sold this book " + title + " you earned " + arr.value);
+         
+                console.log(`Transaction Successful!`);
+           
+            }
+                
+        }
+    
+     }  
+ 
+ }   
+    
 function totalEarnings(){
   
     var total = 0;
@@ -70,7 +135,7 @@ function listInventory(){
 
         let inventory = store.inventory_list[i];
 
-        console.log("book ***** --  " + inventory.tittle + " and value of " + inventory.value);
+        console.log("book ***** --  " + inventory.title + " and value of " + inventory.value + " Quantity of " + inventory.quantity);
     
     }
 
