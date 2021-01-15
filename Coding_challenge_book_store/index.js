@@ -13,7 +13,7 @@
 var store = {
     name: "Bookstore",
     inventory_list: [ ],
-    earnings: " "
+    earnings: []
 }
 
 var book = {
@@ -99,7 +99,7 @@ function sellBook(title , quantity){
                 arr.quantity = sold;
                 
                 console.log("sold this book " + title + " you earned " + arr.value * quantity);
-                store.earnings = arr.value * quantity;
+                store.earnings.push(arr.value * quantity);
                 console.log(`Transaction Successful!`);
            
             }
@@ -112,7 +112,20 @@ function sellBook(title , quantity){
     
 function totalEarnings(){
   
-    console.log(store.name + " total earned : " + store.earnings + " PHP");
+    var total = 0;
+
+    for (i = 0; i < store.earnings.length ; i++){
+        
+        var arr = store.earnings[i];
+
+        var a = parseInt(arr);
+        
+        total  += a;
+    } 
+  
+    console.log(store.name);
+  
+    console.log(" total earnings  " + total);
 
 }
 
