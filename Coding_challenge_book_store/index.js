@@ -12,7 +12,7 @@
 
 var store = {
     name: "Bookstore",
-    inventory_list: [ ],
+    inventory_list: [],
     earnings: []
 }
 
@@ -123,7 +123,7 @@ function totalEarnings(){
   
     console.log(store.name);
   
-    console.log(" total earnings  " + total);
+    console.log(" total Earned  " + total);
 
 }
 
