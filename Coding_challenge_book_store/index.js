@@ -13,7 +13,7 @@
 var store = {
     name: "Bookstore",
     inventory_list: [ ],
-    earnings: "00"
+    earnings: " "
 }
 
 var book = {
@@ -68,6 +68,10 @@ function restockBook(title, quantity){
 
 }
 
+function addEarnings(points) {
+    store.earnings += points;
+  }
+
 function sellBook(title , quantity){
     
     for (i = 0; i < store.inventory_list.length ; i++){
@@ -94,8 +98,8 @@ function sellBook(title , quantity){
             
                 arr.quantity = sold;
                 
-                console.log("sold this book " + title + " you earned " + arr.value);
-         
+                console.log("sold this book " + title + " you earned " + arr.value * quantity);
+                store.earnings = arr.value * quantity;
                 console.log(`Transaction Successful!`);
            
             }
@@ -108,20 +112,7 @@ function sellBook(title , quantity){
     
 function totalEarnings(){
   
-    var total = 0;
-
-    for (i = 0; i < store.inventory_list.length ; i++){
-        
-        var arr = store.inventory_list[i].value;
-
-        var a = parseInt(arr);
-        
-        total  += a;
-    } 
-  
-    console.log(store.name);
-  
-    console.log(" total earnings  " + total);
+    console.log(store.name + " total earned : " + store.earnings + " PHP");
 
 }
 
