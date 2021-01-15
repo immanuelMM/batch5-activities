@@ -54,17 +54,41 @@ function addBook(title , quantity, value){
 
 function restockBook(title, quantity){
 
+    let book = [title , quantity];
+
     for (i = 0; i < store.inventory_list.length ; i++){
         
-        var arr = store.inventory_list[i];
+        // console.log(rebook.title + " - " +requantity);
 
-    }
-    
-    if(arr == null){
+        if(store.inventory_list[i].title == title){
+           
+            let a = store.inventory_list[i].quantity + quantity;
+           
+             store.inventory_list[i].quantity = a;
+                 
+            console.log(" updating my stock add = " + quantity)
 
-        store.inventory_list.push(stock);
-    
+            console.log("updated " + store.inventory_list[i].title + " with new quantity " +  store.inventory_list[i].quantity )
+        
+        }else{
+            console.log("there is no such book in the store");
+        }
     }
+
+    
+  
+
+    // for (i = 0; i < store.inventory_list.length ; i++){
+        
+    //     var arr = store.inventory_list[i];
+
+    // }
+    
+    // if(arr == null){
+
+    //     store.inventory_list.push(stock);
+    
+    // }
 
 }
 
@@ -86,7 +110,7 @@ function sellBook(title , quantity){
             
             }else if(arr.title == title && null ){
             
-                console.log("yea");
+                console.log("yeah");
             
             } else {
            
