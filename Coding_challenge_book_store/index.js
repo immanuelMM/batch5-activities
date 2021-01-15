@@ -68,10 +68,6 @@ function restockBook(title, quantity){
 
 }
 
-function addEarnings(points) {
-    store.earnings += points;
-  }
-
 function sellBook(title , quantity){
     
     for (i = 0; i < store.inventory_list.length ; i++){
@@ -99,7 +95,9 @@ function sellBook(title , quantity){
                 arr.quantity = sold;
                 
                 console.log("sold this book " + title + " you earned " + arr.value * quantity);
+         
                 store.earnings.push(arr.value * quantity);
+         
                 console.log(`Transaction Successful!`);
            
             }
