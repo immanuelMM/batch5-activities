@@ -46,7 +46,7 @@ function addBook(title , quantity, value){
    
         store.inventory_list.push(obeject);
     
-        console.log("Successfully addad Book with Title " + title + " Quantity " + quantity + " and value of " + value);
+        console.log("Successfully added Book with Title " + title + " Quantity " + quantity + " and value of " + value);
    
     }
     
