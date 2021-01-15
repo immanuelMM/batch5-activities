@@ -82,7 +82,7 @@ function sellBook(title , quantity){
            
             }else if (arr.quantity < quantity) {
         
-                console.log(" Only " + arr.quantity + " stocks left.");
+                console.log(" Only " + store.inventory_list[i].quantity + "stocks left.");
             
             }else if(arr.title == title && null ){
             
