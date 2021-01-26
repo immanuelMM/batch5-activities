@@ -13,4 +13,3 @@ FRONTEND
 12. [Activity - Questionnaire](/Questionnaire/index.html)
 12. [Piggamewithjerson](/pig_game1/index.html)
 13. [coding challenge bookstore](/Coding_challenge_book_store/index.html)
-14. [Project banking app with jay](/bank_app/index_login.html)
