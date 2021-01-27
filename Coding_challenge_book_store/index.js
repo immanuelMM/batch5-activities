@@ -39,8 +39,7 @@ function addBook(title , quantity, value){
         stock.push(obeject);
    
         console.log("It's already in store the book move to stockroom");
-        
-   
+         
     }else{
    
         store.inventory_list.push(obeject);
@@ -56,24 +55,17 @@ function restockBook(title, quantity){
     let book = [title , quantity];
 
     for (i = 0; i < store.inventory_list.length ; i++){
-        
-        // console.log(rebook.title + " - " +requantity);
 
         if(store.inventory_list[i].title == title){
-          
-            if( store.inventory_list[i].title == true){
-          
+             
                 let a = store.inventory_list[i].quantity + quantity;
           
                 store.inventory_list[i].quantity = a;
-                 
-          
+                    
                 console.log(" updating my stock add = " + quantity)
-
           
                 console.log("updated " + store.inventory_list[i].title + " with new quantity " +  store.inventory_list[i].quantity )
-        
-        
+         
             }else{
                 console.log("there is no such book in the store");
             }
@@ -81,9 +73,6 @@ function restockBook(title, quantity){
         }
         
     }
-
-
-}
 
 function sellBook(title , quantity){
     
