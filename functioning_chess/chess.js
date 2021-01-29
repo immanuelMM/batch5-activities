@@ -19,9 +19,6 @@ var nBlkIntId;
 const whtSideColor = white.style.background;
 const blkSideColor = black.style.background;
 
-
-
-
 let turn_color = "white"
 let turns = []
 let from_coords = []
@@ -242,8 +239,12 @@ function removeSelection() {
 		
 		if (turn_color == "white"){
 			whtMaster();
+			document.getElementById('blackbtn').style = "background-color:white; border-radius:100px; color:black"
+			document.getElementById('whitebtn').style = "none"
 		}else{
 			blkMaster();
+			document.getElementById('blackbtn').style = "none"
+			document.getElementById('whitebtn').style = "background-color:white; border-radius:100px; color:black"
 		}
 
 	}
