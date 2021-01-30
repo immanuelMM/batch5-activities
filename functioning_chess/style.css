@@ -38,7 +38,7 @@ body {
 
 .controls {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	margin-top: 40px;
 }
 #bench {
@@ -93,6 +93,9 @@ button {
 	text-align: center;
 	font-size: 25px;
 	border-radius: 5px;
+	background-color: #26211b;
+	color: white;
+	width: 90px;
 }
 
 #bench > div {
@@ -147,12 +150,12 @@ button {
 #black1 button{
 	background-color: #26211b;
 	color: white;
-	width: 90px;
+	width: 100px;
 }
 #white1 button{
 	background-color: #26211b;
 	color: white;
-	width: 90px;
+	width: 100px;
 }
 #startInstructions button{
 	float: left;
@@ -163,6 +166,10 @@ button {
 	background-color: #33540ac2;
 	color: aliceblue;
 	border-radius: 20px;
+
+}
+#btnbg{
+	width: 100px;
 }
 @media(max-width:700px){
     body{

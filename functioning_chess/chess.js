@@ -197,6 +197,7 @@ function newGame() {
 	bench.innerHTML = ''
 	boardCreation()
 	benchCreation()
+	resetClick();
 	gameOn = true
 }
 
@@ -239,12 +240,16 @@ function removeSelection() {
 		
 		if (turn_color == "white"){
 			whtMaster();
-			document.getElementById('blackbtn').style = "background-color:white; border-radius:100px; color:black"
+			document.getElementById('blackbtn').style = "background-color:white; border-radius:100px; color:black;"
+			document.getElementById('btnbg1').style = "background-image: url(timer.gif); background-size: 20px; background-repeat: no-repeat;"
 			document.getElementById('whitebtn').style = "none"
+			document.getElementById('btnbg').style = "none"
 		}else{
 			blkMaster();
 			document.getElementById('blackbtn').style = "none"
-			document.getElementById('whitebtn').style = "background-color:white; border-radius:100px; color:black"
+			document.getElementById('btnbg1').style = "none"
+			document.getElementById('whitebtn').style = "background-color:white; border-radius:20px; color:black;"
+			document.getElementById('btnbg').style = "background-image: url(timer.gif); background-size: 20px; background-repeat: no-repeat;"
 		}
 
 	}
@@ -482,6 +487,7 @@ const resetClick = function (event) {
   black.style.pointerEvents = "auto";
   white.style.pointerEvents = "none";
   times.style.pointerEvents = "auto";
+  document.querySelector('#btnbg').style = "none";
 };
   // alert: work in progress
 const learning = function () {
@@ -550,10 +556,12 @@ const whtStop = function () { clearInterval(nWhtIntId);
   // hide instructions at game start
 const hide = function () {
   document.getElementById('startInstructions').style.display = "none";
+  document.getElementById('whitebtn').style = "background-color:white; border-radius:20px; color:black;"
+  document.getElementById('btnbg').style = "background-image: url(timer.gif); background-size: 20px; background-repeat: no-repeat;"
 };
   // show instructions at game reset
 const show = function () {
-  document.getElementById('startInstructions').style.display = "block";
+  document.getElementById('startInstructions').style.display = "block";  
 };
   // hide mobile instructions
 const hideMobile = function () {  document.getElementById('mobileIns').style.display = "none";
@@ -590,5 +598,5 @@ startTime.addEventListener('change', setTime);
   // alert: work in progress
 window.addEventListener('keypress', learning);
   // reset 
-reset.addEventListener('click', resetClick);
+
 
