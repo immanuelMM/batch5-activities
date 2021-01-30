@@ -241,7 +241,7 @@ function removeSelection() {
 		if (turn_color == "white"){
 			whtMaster();
 			document.getElementById('blackbtn').style = "background-color:white; border-radius:100px; color:black;"
-			document.getElementById('btnbg1').style = "background-image: url(timer.gif); background-size: 20px; background-repeat: no-repeat;"
+			document.getElementById('btnbg1').style = "background-image: url(timer.gif); background-size: 30px; background-repeat: no-repeat;"
 			document.getElementById('whitebtn').style = "none"
 			document.getElementById('btnbg').style = "none"
 		}else{
@@ -249,7 +249,7 @@ function removeSelection() {
 			document.getElementById('blackbtn').style = "none"
 			document.getElementById('btnbg1').style = "none"
 			document.getElementById('whitebtn').style = "background-color:white; border-radius:20px; color:black;"
-			document.getElementById('btnbg').style = "background-image: url(timer.gif); background-size: 20px; background-repeat: no-repeat;"
+			document.getElementById('btnbg').style = "background-image: url(timer.gif); background-size: 30px; background-repeat: no-repeat;"
 		}
 
 	}
@@ -566,7 +566,7 @@ const whtStop = function () { clearInterval(nWhtIntId);
 const hide = function () {
   document.getElementById('startInstructions').style.display = "none";
   document.getElementById('whitebtn').style = "background-color:white; border-radius:20px; color:black;"
-  document.getElementById('btnbg').style = "background-image: url(timer.gif); background-size: 20px; background-repeat: no-repeat;"
+  document.getElementById('btnbg').style = "background-image: url(timer.gif); background-size: 30px; background-repeat: no-repeat;"
 };
   // show instructions at game reset
 const show = function () {
