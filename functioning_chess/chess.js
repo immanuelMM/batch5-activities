@@ -488,6 +488,7 @@ const resetClick = function (event) {
   white.style.pointerEvents = "none";
   times.style.pointerEvents = "auto";
   document.querySelector('#btnbg').style = "none";
+  document.querySelector('#btnbg1').style = "none";
   document.getElementById('blackbtn').style = "background-color:none"
   document.getElementById('whitebtn').style = "background-color:none"
 };
