@@ -488,6 +488,8 @@ const resetClick = function (event) {
   white.style.pointerEvents = "none";
   times.style.pointerEvents = "auto";
   document.querySelector('#btnbg').style = "none";
+  document.getElementById('blackbtn').style = "background-color:none"
+  document.getElementById('whitebtn').style = "background-color:none"
 };
   // alert: work in progress
 const learning = function () {
@@ -512,7 +514,10 @@ const blkTicker = function() {
   document.getElementById('blkmin').textContent = min;
   }
  else {
-   black.style.background = 'red';
+	document.getElementById('blackbtn').style = "background-color:red;"
+	document.querySelector('#btnbg1').style = "none";
+  	screenDisplay(`${turn_color[0].toUpperCase() + turn_color.slice(1)} times Up! White win`)
+	gameOver()
  }
 };
  // white second countdown
@@ -535,7 +540,10 @@ const whtTicker = function() {
   }
 
   else {
-  white.style.background = "red";
+	document.getElementById('whitebtn').style = "background-color:red;"
+	document.querySelector('#btnbg').style = "none";
+  	screenDisplay(`${turn_color[0].toUpperCase() + turn_color.slice(1)} times Up! Black win`)
+	gameOver()
  };
 };
   // interval start black countdown
