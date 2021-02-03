@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>US Covid-19</title>
+    <script>
+      const getCovidStats = async() => {
+        try {
+          const response = await fetch('https://api.apify.com/v2/datasets/sFSef5gfYg3soj8mb/items?format=json&clean=1');
+          const response1 = await fetch('https://covid19-api-philippines.herokuapp.com/api/facilities?city_mun=manila+city');
+          const phil = await response.json();
+          const usa1 = await response1.json();
+          covid19 = phil[595];
+          covid191 = usa1;
+          console.log(covid191);
+        }
+        catch (err) {E
+          console.log(`Error: ${err}`);
+        }
+        finally {
+          markup = `
+            infected:          ${covid19['infected']}
+            tested:            ${covid19['tested']}
+            recovered:         ${covid19['recovered']}
+            deceased:          ${covid19['deceased']}
+            country:           ${covid19['country']}
+            lastUpdatedAtApify:           ${covid19['lastUpdatedAtApify']}`
+          document.getElementById('main').innerText = markup;
+        }
+      };
+      getCovidStats();
+    </script>
+  </head>
+  <body>
+      <div id="main"></div>
+  </body>
+  <script src="app.js"></script>
+</html>
