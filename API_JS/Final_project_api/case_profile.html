@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Covid-19</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Covid-19</b></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+
+        COVID -19 MONITORING AND CONTACT TRACING
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+ 
+      </div>
+
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MAIN NAVIGATION</li>
+        <li >
+          <a href="index.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+            </span>
+        </a>
+        </li>
+        <li><br></li>
+        <li class="treeview" >
+          <a href="#">
+            <i class="ion-ios-people"></i> <span>New Cases in NCR</span><span class="pull-right-container">
+            </span>
+          </a>
+          <ul class="treeview-menu" style="display: block;">
+            <li><a href="city/manila.html"><i class="fa fa-circle-o"></i>Metro Manila<span class="label label-danger pull-right">new 3</span></a></li>
+            <li><a href="city/qc.html"><i class="fa fa-circle-o"></i>Quezon city<span class="label label-danger pull-right">new 10</span></a></li>
+            <li><a href="city/makati.html"><i class="fa fa-circle-o"></i> City of Makati</a></li>
+            <li><a href="city/taguig.html"><i class="fa fa-circle-o"></i> Taguig City</a></li>
+            <li><a href="city/valenzuela.html"><i class="fa fa-circle-o"></i> City of Valenzuela</a></li>
+            <li><a href="city/caloocan.html"><i class="fa fa-circle-o"></i> Caloocan ity</a></li>
+            <li><a href="city/sanjuan.html"><i class="fa fa-circle-o"></i> City of san juan</a></li>
+            <li><a href="city/mandaluyong.html"><i class="fa fa-circle-o"></i> City of Mandaluyong</a></li>
+          </ul>
+        </li>
+        <li class="active  treeview menu-open" >
+          <a href="#">
+            <i class="ion-ios-people"></i> <span>Health status NCR</span><span class="pull-right-container">
+            </span>
+          </a>
+          <ul class="treeview-menu" style="display: block;">
+            <li><a href="index1.html"><i class="fa  fa-check-circle"></i><i class="fa fa-child"></i>Recovered</a></li>
+            <li><a href="active.html"><i class="fa fa-user"></i><i class="fa fa-check"></i>Active Cases</a></li>
+            <li><a href="death.html"><i class="fa fa-circle-o"></i> <i class="fa fa-user-times"></i>Deceased</a></li>
+          </ul>
+        </li>
+        <li><br></li>
+        <li>
+          <a href="#">
+            <i class="fa fa-th"></i> <span>Map View</span>
+          </a>
+        </li>
+      </ul>
+  </section>
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Case
+        <small>Profile</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Cases</li>
+      </ol>
+    </section>
+
+    <section class="content">
+
+        <div class="row">
+          <div class="col-md-3">
+  
+            <!-- Profile Image -->
+            <div class="box box-primary">
+              <div class="box-body box-profile">
+                <img class="profile-user-img img-responsive img-circle" src="profile.jpg" alt="User profile picture">
+  
+                <h3 class="profile-username text-center" id="case_code_num"></h3>
+  
+                <p class="text-muted text-center" id="case_sex"></p>
+  
+                <ul class="list-group list-group-unbordered">
+                  <li class="list-group-item">
+                    <b>Admitted</b> <a class="pull-right" id="admitted">. . .</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Age</b> <a class="pull-right" id="age">. . .</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Region</b> <a class="pull-right" id="region">. . .</a>
+                  </li>
+                </ul>
+  
+                <a href="#" class="btn btn-primary btn-block" id="status-health"><b>Recovered</b></a>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+  
+            <!-- About Me Box -->
+            <div class="box box-primary">
+              <div class="box-header with-border">
+                <h3 class="box-title">Info</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <strong><i class="fa fa-book margin-r-5"></i>City Municipal PSGC</strong>
+  
+                <p class="text-muted" id="city">
+                 .....
+                </p>
+  
+                <hr>
+  
+                <strong><i class="fa fa-map-marker margin-r-5"></i> Hospital Admitted</strong>
+  
+                <p class="text-muted">Hospital <b id="hospital">. . .</b></p></p>
+  
+                <hr>
+  
+                <strong><i class="fa fa-pencil margin-r-5"></i> Symtoms</strong>
+  
+                <p>
+                  <span class="label label-danger">fever</span>
+                  <span class="label label-success">dry cough</span>
+                  <span class="label label-info">tiredness</span>
+                  <span class="label label-warning">aches and pains</span>
+                  <span class="label label-primary">sore throat</span>
+                </p>
+  
+                <hr>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-9">
+            <div class="nav-tabs-custom">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#timeline" data-toggle="tab" aria-expanded="true">Timeline</a></li>
+              </ul>
+              <div class="tab-content">
+                <!-- /.tab-pane -->
+                <div class="tab-pane active" id="timeline">
+                  <!-- The timeline -->
+                  <ul class="timeline timeline-inverse">
+                    <!-- timeline time label -->
+                    <li class="time-label">
+                          <span class="bg-red">
+                            10 Feb. 2020
+                          </span>
+                    </li>
+                    <!-- /.timeline-label -->
+                    <!-- timeline item -->
+                    <li>
+                      <i class="fa fa-cab bg-blue"></i>
+  
+                      <div class="timeline-item">
+                        <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+  
+                        <h3 class="timeline-header"><a href="#">Home </a>socialized people</h3>
+  
+                        <div class="timeline-body">
+                            <p>Sample 1 - meet People 5</p>
+                            <p>Sample 2 - meet People 10</p>
+                            <p>Sample 3 - meet People 20</p>
+                            <p> Sample 4 - meet People 30</p>
+                        </div>
+                        <div class="timeline-footer">
+                          <a class="btn btn-primary btn-xs">View more</a>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- END timeline item -->
+                    <!-- timeline item -->
+                    <li>
+                        <i class="fa fa-user bg-aqua"></i>
+    
+                        <div class="timeline-item">
+                          <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+    
+                          <h3 class="timeline-header"><a href="#"> socialized people</a></h3>
+    
+                          <div class="timeline-body">
+                              <p>Sample 1 - meet People 5</p>
+                              <p>Sample 2 - meet People 10</p>
+                              <p>Sample 3 - meet People 20</p>
+                              <p> Sample 4 - meet People 30</p>
+                          </div>
+                          <div class="timeline-footer">
+                            <a class="btn btn-primary btn-xs">View more</a>
+                          </div>
+                        </div>
+                      </li>
+                    <li>
+                      <i class="fa fa-user bg-aqua"></i>
+  
+                      <div class="timeline-item">
+                        <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
+                        <div class="timeline-body">
+                            <p>Sample 1 - meet People 5</p>
+                            <p>Sample 2 - meet People 10</p>
+                            <p>Sample 3 - meet People 20</p>
+                            <p> Sample 4 - meet People 30</p>
+                        </div>
+                        <div class="timeline-footer">
+                          <a class="btn btn-primary btn-xs">View more</a>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- END timeline item -->
+                    <!-- timeline item -->
+                    <li>
+                      <i class="fa fa-comments bg-yellow"></i>
+  
+                      <div class="timeline-item">
+                        <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
+  
+                        <div class="timeline-body">
+                          <p>Sample 1 - meet People 5</p>
+                          <p>Sample 2 - meet People 10</p>
+                          <p>Sample 3 - meet People 20</p>
+                          <p> Sample 4 - meet People 30</p>
+                      </div>
+                      </div>
+                    </li>
+                    <!-- END timeline item -->
+                    <!-- timeline time label -->
+                    <li class="time-label">
+                          <span class="bg-green">
+                            3 Jan. 2014
+                          </span>
+                    </li>
+                    <!-- /.timeline-label -->
+                    <!-- timeline item -->
+                    <li>
+                      <i class="fa fa-cab bg-blue"></i>
+  
+                      <div class="timeline-item">
+                        <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+  
+                        <h3 class="timeline-header"><a href="#">Home</a>socialized people</h3>
+  
+                        <div class="timeline-body">
+                            <p>Sample 1 - meet People 5</p>
+                            <p>Sample 2 - meet People 10</p>
+                            <p>Sample 3 - meet People 20</p>
+                            <p> Sample 4 - meet People 30</p>
+                        </div>
+                        <div class="timeline-footer">
+                          <a class="btn btn-primary btn-xs">View more</a>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- END timeline item -->
+                    <li>
+                      <i class="fa fa-clock-o bg-gray"></i>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.tab-pane -->
+              </div>
+              <!-- /.tab-content -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+  
+      </section>
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2020-2021 <a href="https://www.avionschool.com/">https://www.avionschool.com/</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+  <div id="main"></div>
+</div>
+<!-- jQuery 3 -->
+<script>
+
+const url = new URL(location);
+const params = new URLSearchParams(url.search.slice(1));
+const case_code_pro = params.get("name");
+
+async function getdata(){
+  let responce = await fetch("https://covid19-api-philippines.herokuapp.com/api/get?region_res=ncr&age_group=20-24")
+  let data = await responce.json()
+  return data
+}
+
+getdata().then(data => {
+  for(i = 0; i <  10000; i++ ){
+    var a = data.data[i];
+    if(a.case_code === case_code_pro){
+        console.log(a)
+        document.getElementById('case_code_num').innerHTML = a.case_code
+        document.getElementById('case_sex').innerHTML = a.sex
+        document.getElementById('admitted').innerHTML = a.admitted
+        document.getElementById('age').innerHTML = a.age
+        document.getElementById('region').innerHTML = a.region_res
+        document.getElementById('city').innerHTML = a.city_muni_psgc + " " +a.city_mun_res 
+        document.getElementById('hospital').innerHTML = a.city_mun_res
+        document.getElementById('status-health').innerHTML = a.health_status 
+    }
+    
+}}) 
+
+
+
+</script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<!-- <script src="dist/js/demo.js"></script> -->
+</body>
+</html>

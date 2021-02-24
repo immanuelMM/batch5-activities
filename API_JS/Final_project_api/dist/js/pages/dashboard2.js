@@ -17,28 +17,38 @@ $(function () {
   var salesChart       = new Chart(salesChartCanvas);
 
   var salesChartData = {
-    labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels  : ['January', 'March', 'June', 'September', 'October', 'November', 'December'],
     datasets: [
       {
-        label               : 'Electronics',
-        fillColor           : 'rgb(210, 214, 222)',
-        strokeColor         : 'rgb(210, 214, 222)',
-        pointColor          : 'rgb(210, 214, 222)',
-        pointStrokeColor    : '#c1c7d1',
-        pointHighlightFill  : '#fff',
-        pointHighlightStroke: 'rgb(220,220,220)',
-        data                : [65, 59, 80, 81, 56, 55, 40]
-      },
-      {
-        label               : 'Digital Goods',
-        fillColor           : 'rgba(60,141,188,0.9)',
+        label               : 'actve case',
+        fillColor           : '#49b0e3',
         strokeColor         : 'rgba(60,141,188,0.8)',
         pointColor          : '#3b8bba',
         pointStrokeColor    : 'rgba(60,141,188,1)',
         pointHighlightFill  : '#fff',
         pointHighlightStroke: 'rgba(60,141,188,1)',
-        data                : [28, 48, 40, 19, 86, 27, 90]
-      }
+        data                : [10, 30, 25, 50, 50, 60, 70]
+      },
+      {
+        label               : 'recovery',
+        fillColor           : '#00a65aab',
+        strokeColor         : '#00a65a',
+        pointColor          : '#00a65a',
+        pointStrokeColor    : '#c1c7d1',
+        pointHighlightFill  : '#fff',
+        pointHighlightStroke: 'rgb(220,220,220)',
+        data                : [5, 12, 28, 30, 45, 55, 65]
+      },
+      {
+        label               : 'Deatch',
+        fillColor           : '#dd4b39',
+        strokeColor         : '#dd4b39',
+        pointColor          : '#dd4b39',
+        pointStrokeColor    : '#dd4b39',
+        pointHighlightFill  : '#fff',
+        pointHighlightStroke: 'rgba(60,141,188,1)',
+        data                : [10, 5, 10, 20, 10, 10, 15]
+      }   
     ]
   };
 
@@ -99,37 +109,37 @@ $(function () {
       value    : 700,
       color    : '#f56954',
       highlight: '#f56954',
-      label    : 'Chrome'
+      label    : 'metro manila'
     },
     {
       value    : 500,
       color    : '#00a65a',
       highlight: '#00a65a',
-      label    : 'IE'
+      label    : 'pasig'
     },
     {
       value    : 400,
       color    : '#f39c12',
       highlight: '#f39c12',
-      label    : 'FireFox'
+      label    : 'QC'
     },
     {
       value    : 600,
       color    : '#00c0ef',
       highlight: '#00c0ef',
-      label    : 'Safari'
+      label    : 'Pasay'
     },
     {
       value    : 300,
       color    : '#3c8dbc',
       highlight: '#3c8dbc',
-      label    : 'Opera'
+      label    : 'Pampanga'
     },
     {
       value    : 100,
       color    : '#d2d6de',
       highlight: '#d2d6de',
-      label    : 'Navigator'
+      label    : 'Bulcan'
     }
   ];
   var pieOptions     = {
