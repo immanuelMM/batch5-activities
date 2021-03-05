@@ -4,8 +4,6 @@ def square_root_me(num)
    for i in 0..10000 do
      retval = ((retval + num/retval)/2).to_i
      return retval 
-     if retval*retval == num 
-     end
    end
  end
 def is_square?(x)
@@ -13,7 +11,7 @@ def is_square?(x)
   if x == 0 
     puts "#{x} - #{true}"
     return true
-  elsif x == -1
+  elsif x < 0
    puts "#{x} - #{false}"
    return false
   end
@@ -22,7 +20,7 @@ def is_square?(x)
     puts "#{x} - #{result}"
     return result
   end
-  is_square?(-1)
+  is_square?(-2)
   is_square?(0)
   is_square?(3)
   is_square?(4)
