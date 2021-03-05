@@ -13,13 +13,16 @@ def is_square?(x)
   if x == 0 
     puts "#{x} - #{true}"
     return true
+  elsif x == -1
+   puts "#{x} - #{false}"
+   return false
   end
     sqrt = square_root_me(x)
     result = x  == sqrt * sqrt
     puts "#{x} - #{result}"
     return result
   end
-
+  is_square?(-1)
   is_square?(0)
   is_square?(3)
   is_square?(4)
