@@ -60,12 +60,14 @@ end
 
 phone = Phone.new
 puts "Phone is"
+puts phone.battery_level
 puts "Charging ... " + phone.charge.to_s 
 puts phone.check_cell_signal 
 puts phone.boot
 puts "////////////"
 laptop = Laptop.new
 puts "Laptop is"
+puts laptop.battery_level
 puts "Charging ... " + laptop.charge.to_s 
 puts laptop.check_cell_signal 
 puts laptop.boot
