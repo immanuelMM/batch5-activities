@@ -48,30 +48,42 @@ class Phone
     include Battery
     include Signal
     include Boot
+
+    def get
+        puts "battery -" + battery_level.to_s
+        puts "Phone is"
+        puts "Charging ... " + charge.to_s 
+        puts check_cell_signal 
+        puts boot
+        puts "/////////////////////////////////"
+    end
 end
 class Laptop 
     include Battery
     include Signal
     include Boot
+    def get
+        puts "battery -" + battery_level.to_s
+        puts "Laptop is"
+        puts "Charging ... " + charge.to_s 
+        puts check_cell_signal 
+        puts boot
+        puts "/////////////////////////////////"
+    end
 end
 class Computer 
     include Boot
+    def get
+        puts "Computer is"
+        puts boot
+    end
 end
 
+# call
 phone = Phone.new
-puts "Phone is"
-puts phone.battery_level
-puts "Charging ... " + phone.charge.to_s 
-puts phone.check_cell_signal 
-puts phone.boot
-puts "////////////"
+phone.get
 laptop = Laptop.new
-puts "Laptop is"
-puts laptop.battery_level
-puts "Charging ... " + laptop.charge.to_s 
-puts laptop.check_cell_signal 
-puts laptop.boot
-puts "////////////"
+laptop.get
 computer = Computer.new
-puts "Computer is"
-puts computer.boot
+computer.get
+
