@@ -10,11 +10,11 @@ INSERT INTO students (id, first_name, middle_name,last_name,age,location)
     (6'Piolo','Blank','Pascual',25,'Manila');
 
 UPDATE students
-SET  first_name = 'Ana',
+SET first_name = 'Ana',
     middle_name = 'CUi',
     last_name = 'Cajocson',
     age = 25,
-location = 'Bulacan'
+    location = 'Bulacan'
 HERE id = 1
 
 
