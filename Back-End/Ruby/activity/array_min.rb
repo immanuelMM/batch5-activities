@@ -9,9 +9,9 @@
 
 
 def getlowest arr
-    if arr.size < 2 then
-      return arr.first, nil
-    end
+    # if arr.size < 2 then
+    #   return arr.first, nil
+    # end
     lowest  =  nil
     arr.each do |n|
       if lowest.nil? or n < lowest

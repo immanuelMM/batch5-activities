@@ -48,7 +48,6 @@ class Phone
     include Battery
     include Signal
     include Boot
-
     def get
         puts "battery -" + battery_level.to_s
         puts "Phone is"
