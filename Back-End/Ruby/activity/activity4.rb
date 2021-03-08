@@ -40,5 +40,5 @@ end
 loop do
   puts "select"
   ans = gets.chomp
-  puts get_city_names(dial_book)
+  puts ans + " - "+ get_city_names(dial_book)
 end
