@@ -20,3 +20,5 @@ HERE id = 1
 
 DELETE FROM students WHERE id = 6
 
+-- activiity 2
+
