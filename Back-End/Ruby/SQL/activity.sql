@@ -59,3 +59,10 @@ FROM classrooms
 LEFT JOIN students
 ON students.id = classrooms.student_id;
 
+-- activity 12/03/2021 - friday
+-- o
+SELECT COUNT (DISTINCT r.inventory_id) AS "unique_inventory_rented", COUNT (r.inventory_id) AS "TOtal_inventory_rented"
+FROM rental as r
+LEFT JOIN inventory as i ON i.inventory_id = r.inventory_id;
+-- 1
+
