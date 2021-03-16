@@ -4,4 +4,6 @@ def centuryFromYear(year)
      else 
        (year - (year % 100))/100 + 1
      end
-  end
+end
+puts centuryFromYear(1991)
+    
