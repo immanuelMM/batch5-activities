@@ -59,10 +59,39 @@ FROM classrooms
 LEFT JOIN students
 ON students.id = classrooms.student_id;
 
+
+
 -- activity 12/03/2021 - friday
--- o
+Database: dvdrental
+-- 0. Display the number of unique inventory rented and the total number of inventory rented
+-- Column => unique_inventory_rented, total_inventory_rented
+-- Answer => 1 row
+-- 1. List all the films of Dan Torn and Dan Streep. Sort by film_title alphabetical order
+-- Column => film_title, release_year, and rating, and actor_full_name. 
+-- Answer => 46 rows
+-- 2. List all Comedy films of all actors whose last names start with 'D'. Sort by actor_full_name alphabetical order
+-- Column => actor_full_name, film_title, category_name
+-- Answer => 34 rows
+-- 3. Determine the potential number of customers a store staff would serve (count the number of customer in the same country as the staff)
+-- Column => staff_full_name, customer_count
+-- Answer => 2 rows
+-- 0
 SELECT COUNT (DISTINCT r.inventory_id) AS "unique_inventory_rented", COUNT (r.inventory_id) AS "TOtal_inventory_rented"
 FROM rental as r
 LEFT JOIN inventory as i ON i.inventory_id = r.inventory_id;
 -- 1
+
+-- activity 13/03/2021 - saturday part 2
+-- 4. Find the most popular film category per store (determined by the number of rentals)
+-- Column => store_id, film_count, category_name
+-- Answer => 2 rows
+SELECT c.name,COUNT (f.rental_id)
+FROM category AS c
+LEFT JOIN film_category AS s ON s.category_id = c.category_id
+LEFT JOIN rental as f ON f.rental_id = c.category_id
+GROUP BY c.name
+-- 5. Rank the top 5 actors per country (determined by the number rentals) sort by most popular to least popular
+-- Column => country, actor_full_name, actor_rank, rent_count
+-- Answer => 10 rows
+
 
