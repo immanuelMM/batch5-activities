@@ -6,4 +6,3 @@ def centuryFromYear(year)
      end
 end
 puts centuryFromYear(1991)
-    
